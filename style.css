@@ -7,7 +7,7 @@ header
     padding: 20px 40px 0px 40px;
     background-color: #1F2326;
     height: 80px;
-    width: 100%;
+    width: 95.85%;
 }
 #header_logo
 {
@@ -41,5 +41,84 @@ header
 {
     height: 30px;
     margin: auto 0px;
+    text-decoration: none;
+    color: white;
 }
+#nav_bar
+{
+    width: 20%;
+    height: 839px;
+    background-color: #1F2326;
+    text-transform: uppercase;
+    border-right: 1px solid white;
+    float: left;
+}
+#nav_bar > ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+#nav_bar > ul > li
+{
+    padding: 20px;
+    font-size: 18px;
+}
+#nav_bar > ul > li > a
+{
+    text-decoration: none;
+    color: white;
+}
+#main_sliderbox
+{
+    width: 79.94%;
+    height: 433px;
+    background-color: #1F2326;
+    float: left;
+    color: white;
+}
+#main_sliderbox_slider
+{
+    width: 80%;
+    height: 420px;
+    margin: auto;
+    background-color: aqua;
+    border-radius: 30px;
+}
+#main_offers
+{
+    width: 79.94%;
+    height: 405px;
+    background-color: #1F2326;
+    float: left;
+}
+#main_offers_container
+{
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: rgb(137, 14, 148);
+    color: white;
+
+}
+#main_offers_container > img
+{
+    float: left;
+    margin: 110px 0px;
+}
+#main_offers_container > p
+{
+    margin-left: 80px;
+    font-size: 32px;
+}
+.main_offers_container_box
+{
+    width: 15%;
+    height: 250px;
+    background-color: aqua;
+    float: left;
+    margin: 10px 20px;
+}
+
+
 
