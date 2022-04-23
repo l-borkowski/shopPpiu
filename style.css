@@ -7,7 +7,7 @@ header
     padding: 20px 40px 0px 40px;
     background-color: #1F2326;
     height: 80px;
-    width: 95.85%;
+    width: 95.80%;
 }
 #header_logo
 {
@@ -47,7 +47,7 @@ header
 #nav_bar
 {
     width: 20%;
-    height: 839px;
+    height: 1583px;
     background-color: #1F2326;
     text-transform: uppercase;
     border-right: 1px solid white;
@@ -85,10 +85,31 @@ header
     background-color: aqua;
     border-radius: 30px;
 }
+#main_sliderbox_slider_game
+{
+    padding-top: 250px;
+    margin-left: 30px;
+}
+#main_sliderbox_slider_game > h1
+{
+    margin-bottom: 0px;
+}
+#main_sliderbox_slider_game > p
+{
+    margin-top: 0px;
+}
+#main_sliderbox_slider_game > input
+{
+    padding: 5px 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+}
 #main_offers
 {
     width: 79.94%;
-    height: 405px;
+    height: 1150px;
     background-color: #1F2326;
     float: left;
 }
@@ -96,20 +117,27 @@ header
 {
     width: 90%;
     height: 300px;
-    margin: 20px auto;
-    background-color: rgb(137, 14, 148);
+    margin: 30px auto;
+    background-color: #1F2326;
     color: white;
 
 }
 #main_offers_container > img
 {
     float: left;
-    margin: 110px 0px;
+    margin: 120px 0px;
+}
+#main_offers_container > h1
+{
+    font-weight: 400;
+    margin-left: 80px;
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 #main_offers_container > p
 {
     margin-left: 80px;
-    font-size: 32px;
+    font-size: 14px;
 }
 .main_offers_container_box
 {
@@ -117,8 +145,14 @@ header
     height: 250px;
     background-color: aqua;
     float: left;
-    margin: 10px 20px;
+    margin: 10px 23px;
 }
-
-
+.main_offers_container_box2
+{
+    width: 15%;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+    margin: 20px 34px;
+}
 
