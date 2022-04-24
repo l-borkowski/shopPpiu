@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+}
+header
+{
+    padding: 20px 40px 0px 40px;
+    background-color: #1F2326;
+    height: 80px;
+    width: 95.80%;
+}
+#header_logo
+{
+    width: 20%;
+    float: left;
+}
+#header_searchbar
+{
+    float: left;
+    width: 50%;
+    padding: 15px 40px 0px 40px;
+}
+#header_searchbar_input
+{
+    border: 1px solid #1F2326;
+    border-radius: 20px;
+    width: 60%;
+    height: 30px;
+
+}
+#header_login
+{
+    width: 20%;
+    color: white;
+    float: left;
+    text-align: right;
+    margin: auto 0px;
+    font-size: 17px;
+}
+#header_login > p > a
+{
+    height: 30px;
+    margin: auto 0px;
+    text-decoration: none;
+    color: white;
+}
+#nav_bar
+{
+    width: 20%;
+    height: 1583px;
+    background-color: #1F2326;
+    text-transform: uppercase;
+    border-right: 1px solid white;
+    float: left;
+}
+#nav_bar > ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+#nav_bar > ul > li
+{
+    padding: 20px;
+    font-size: 18px;
+}
+#nav_bar > ul > li > a
+{
+    text-decoration: none;
+    color: white;
+}
+#main_sliderbox
+{
+    width: 79.94%;
+    height: 433px;
+    background-color: #1F2326;
+    float: left;
+    color: white;
+}
+#main_sliderbox_slider
+{
+    width: 80%;
+    height: 420px;
+    margin: auto;
+    background-color: aqua;
+    border-radius: 30px;
+}
+#main_sliderbox_slider_game
+{
+    padding-top: 250px;
+    margin-left: 30px;
+}
+#main_sliderbox_slider_game > h1
+{
+    margin-bottom: 0px;
+}
+#main_sliderbox_slider_game > p
+{
+    margin-top: 0px;
+}
+#main_sliderbox_slider_game > input
+{
+    padding: 5px 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#main_offers
+{
+    width: 79.94%;
+    height: 1150px;
+    background-color: #1F2326;
+    float: left;
+}
+#main_offers_container
+{
+    width: 90%;
+    height: 300px;
+    margin: 30px auto;
+    background-color: #1F2326;
+    color: white;
+
+}
+#main_offers_container > img
+{
+    float: left;
+    margin: 120px 0px;
+}
+#main_offers_container > h1
+{
+    font-weight: 400;
+    margin-left: 80px;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+#main_offers_container > p
+{
+    margin-left: 80px;
+    font-size: 14px;
+}
+.main_offers_container_box
+{
+    width: 15%;
+    height: 250px;
+    background-color: aqua;
+    float: left;
+    margin: 10px 23px;
+}
+.main_offers_container_box2
+{
+    width: 15%;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+    margin: 20px 34px;
+}
+
