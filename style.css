@@ -1,11 +1,11 @@
 body
 {
     margin: 0;
+    background-color: #1F2326;
 }
 header
 {
     padding: 20px 40px 0px 40px;
-    background-color: #1F2326;
     height: 80px;
     width: 95.80%;
 }
@@ -22,7 +22,6 @@ header
 }
 #header_searchbar_input
 {
-    border: 1px solid #1F2326;
     border-radius: 20px;
     width: 60%;
     height: 30px;
@@ -47,10 +46,8 @@ header
 #nav_bar
 {
     width: 20%;
-    height: 1583px;
-    background-color: #1F2326;
+    height: 2200px;
     text-transform: uppercase;
-    border-right: 1px solid white;
     float: left;
 }
 #nav_bar > ul
@@ -73,9 +70,9 @@ header
 {
     width: 79.94%;
     height: 433px;
-    background-color: #1F2326;
     float: left;
     color: white;
+    border-left: 1px solid white;
 }
 #main_sliderbox_slider
 {
@@ -109,8 +106,7 @@ header
 #main_offers
 {
     width: 79.94%;
-    height: 1150px;
-    background-color: #1F2326;
+    height: 1000px;
     float: left;
 }
 #main_offers_container
@@ -118,9 +114,7 @@ header
     width: 90%;
     height: 300px;
     margin: 30px auto;
-    background-color: #1F2326;
     color: white;
-
 }
 #main_offers_container > img
 {
@@ -133,6 +127,7 @@ header
     margin-left: 80px;
     font-size: 32px;
     margin-bottom: 5px;
+    color: white;
 }
 #main_offers_container > p
 {
@@ -149,10 +144,82 @@ header
 }
 .main_offers_container_box2
 {
-    width: 15%;
-    height: 200px;
+    width: 22.5%;
+    height: 400px;
     background-color: aqua;
     float: left;
-    margin: 20px 34px;
+    margin: 20px 20px;
 }
+#main_offers_container2 :nth-child(3)
+{
+margin-left: 0;
+}
+#main_offers_container2 :last-child
+{
+margin-right: 0;
+}
+#main_offers_container2
+{
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    color: white;
+}
+#main_offers_container2 > h1
+{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+#main_about
+{
+    width: 80%;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+#main_about_header
+{
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    border-bottom: 5px solid #59695F;
+}
+#main_about_header > h1
+{
+    text-transform: uppercase;
+    color: white;
+    font-size: 48px;
+}
+#main_about_container
+{
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+}
+#main_about_container :first-child
+{
+margin-left: 0;
+}
+#main_about_container :last-child
+{
+margin-right: 0;
+}
+.main_about_container_box
+{
+    width: 20%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+    margin: 20px 45px;
+}
+#footer
+{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 5px 40px;
+    background-color: #31383D;
+    color: white;
+}
+
 
