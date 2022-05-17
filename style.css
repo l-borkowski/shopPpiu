@@ -46,7 +46,7 @@ header
 #nav_bar
 {
     width: 20%;
-    height: 2200px;
+    height: 2000px;
     text-transform: uppercase;
     float: left;
 }
@@ -89,6 +89,7 @@ header
     height: 170px;
     background-color: crimson;
     background-image: url(images/elden_ring.jpg);
+    background-size: 100% 100%;
     padding-top: 250px;
     border-radius: 30px 0 0 30px;
 }
@@ -169,36 +170,74 @@ header
 }
 #main_offers_container
 {
-    width: 80%;
-    height: 400px;
-    margin: 30px auto;
+    width: 100%;
+    height: 350px;
+    margin: 0px auto;
     color: white;
+    float: left;
+    overflow: hidden;
+}
+#main_offers_arrows
+{
+position: relative;
+width: 60%;
+height: 350px;
+margin: 0 auto;
+}
+#main_offers_arrows > button
+{
+    position: absolute;
+    width: 10%;
+    background: none;
+    border: none;
+    margin-top: 100px;
+    z-index: 10;
+}
+#nextBtn
+{
+    right: -10%;
+}
+#prevBtn
+{
+    left: -10%;
 }
 #main_offers_container > img
 {
     float: left;
     margin: 120px 0px;
 }
-#main_offers_container > h1
+#main_offers > h1
 {
     font-weight: 400;
     font-size: 32px;
     margin-bottom: 5px;
     color: white;
+    width: 80%;
+    margin: auto;
 }
-#main_offers_container > p
+#main_offers > p
 {
     font-size: 14px;
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 .main_offers_container_box
 {
-    width: 16%;
     height: 200px;
     background-color: aqua;
     float: left;
     margin: 10px 40px;
     border-radius: 30px;
     text-align: center;
+}
+#main_offers_container_slider
+{
+    height: 400px;
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
 }
 .main_offers_container_box > p
 {
@@ -244,7 +283,12 @@ margin-right: 0;
 #main_offers_container2 > h1
 {
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+}
+#main_offers_container2 > p
+{
+    font-weight: 400;
+    margin-top: 2px;
 }
 #main_about
 {
