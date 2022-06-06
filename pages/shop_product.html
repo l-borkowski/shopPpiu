@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/style_product.css"/>
+    <!-- Import czcionki-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <title>Sklep</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header" >
+            <div class="search__container">
+                <input type="text" class="search__input" placeholder=" Search"/>
+            </div>
+            <div id="header_login">
+                <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img src="../images/cart_icon.png" width="33px" height="33px" style="vertical-align:middle"/></a></p>
+            </div>
+        </div>
+        <div class="navigator">
+
+            <!--LOGO-->
+            <div id="header_logo">
+                <img src ="../images/game-boy_white.png" width="70%" class="center"/>
+            </div>
+
+            <!--NAV BAR-->
+            <div id="nav_bar">
+                <ul>
+                    <li style="font-weight: 400"><a class="four" href="#"><img src="../images/glowna.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;home</a></li>
+                    <li><a class="four" href="#"><img src="../images/search.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;przeglądaj&nbsp;</a></li>
+                    <li><a class="four" href="#"><img src="../images/kategorie.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
+                    <li><a class="prom" href="#"><img src="../images/nowosci.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;promocje</a></li>
+                    <li><a class="four" href="#"><img src="../images/promocje.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;nowości</a></li>
+                    <li><a class="four" href="#"><img src="../images/onas.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;o nas</a></li>
+                </ul>
+            </div>
+
+        </div>
+    <div class="main">
+        <div id="main_sliderbox">
+            <div id="main_sliderbox_image">
+            <img src="../images/edBK.jpg" width="100%" height="500px" id="main_sliderbox_image_img"/>
+            </div>
+            <div id="main_sliderbox_descriptions">
+                <h1>Elden Ring</h1>
+                <p>Rok produkcji: 2021<br/>
+                Producent: FromSoftware<br/>
+                Forma: CD-Key</p>
+                <p>Cena:</p>
+                <h1>194PLN</h1>
+                <button id="button_buy">Kup Teraz</button>
+                <button id="button_add">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div id="main_descriptions">
+            <h1>Opis gry</h1>
+            <p>Elden Ring to gra RPG akcji opracowana przez 
+                FromSoftware i wydana przez Bandai Namco 
+                Entertainment. Gra została wyreżyserowana 
+                przez Hidetakę Miyazakiego i stworzona we 
+                współpracy z powieściopisarzem fantasy Georgem 
+                R.R. Martinem, który dostarczył materiał na 
+                scenerię gry.
+            </p>
+        </div>
+        <div id="main_spec">
+            <div id="main_spec_min">
+                <h1>Minimalne</h1>
+                <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                <p><span style="font-weight:500; color: white;">Procesor:</span> INTEL CORE I5-8400 or AMD RYZEN 3 3300X</p>
+                <p><span style="font-weight:500; color: white;">Pamięć:</span> 12 GB RAM</p>
+                <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB</p>
+                <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+            </div>
+            <div id="main_spec_rec">
+                <h1>Zalecane</h1>
+                <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10/11</p>
+                <p><span style="font-weight:500; color: white;">Procesor:</span> INTEL CORE I7-8700K or AMD RYZEN 5 3600X</p>
+                <p><span style="font-weight:500; color: white;">Pamięć:</span> 16 GB RAM</p>
+                <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB</p>
+                <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <script src="../scripts/script_product.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

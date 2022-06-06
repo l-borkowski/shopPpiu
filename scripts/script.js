@@ -1,4 +1,19 @@
+//MAIN_PAGE
 //slider
+
+const str = 'Hello world';
+let watchdogsbool = false;
+ 
+export default watchdogsbool;
+export let meatboybool = false; 
+export let cupheadbool = true; 
+export let raymanbool = false;
+export let fallguysbool = false; 
+export let gearsofwarbool = false; 
+
+try{
+
+
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
 
@@ -6,7 +21,6 @@ const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 let counter = 1;
-const size = container_slider_boxes[0].clientWidth;
 
 container_slider.style.transform = "translateX(-258px)";
 
@@ -106,3 +120,69 @@ witcher.addEventListener("click", function()
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
 });
+/*
+let watchdogsbool = false;
+let meatboybool = false; 
+let cupheadbool = false; 
+let raymanbool = false;
+let fallguysbool = false; 
+let gearsofwarbool = false; 
+*/
+
+//SHOP_PRODUCT
+const sliderbox_image = document.querySelector("#main_sliderbox_image");
+
+container_slider_boxes[0].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //watchdogsbool = true;
+    }
+);
+container_slider_boxes[1].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //meatboybool = true;
+    }
+);
+
+container_slider_boxes[2].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //cupheadbool = true; 
+    }
+);
+container_slider_boxes[3].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //raymanbool = true;
+    }
+);
+container_slider_boxes[4].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //fallguysbool = true; 
+    }
+);
+container_slider_boxes[5].addEventListener("click", function()
+    {
+        sliderbox_image.src = "../images/cyberpunk2077.jpg";
+        console.log("click");
+        //gearsofwarbool = true; 
+    }
+);
+/*
+module.export = { watchdogsbool };
+module.export = { meatboybool };
+module.export = { cupheadbool  };
+module.export = { raymanbool };
+*/
+}
+catch
+{
+
+}
