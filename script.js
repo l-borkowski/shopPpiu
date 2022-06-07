@@ -106,3 +106,5 @@ witcher.addEventListener("click", function()
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
 });
+
+// elo
