@@ -35,7 +35,7 @@
     mysqli_stmt_close($statement);
     mysqli_close($connection);
 
-    if (!$fetched_user_id) {
+    if (empty($fetched_user_id)) {
         error('Podano błędne dane do logowania!');
         return;
     }

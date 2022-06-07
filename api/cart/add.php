@@ -8,7 +8,7 @@
         return;
     }
 
-    if (!isset($_SESSION['user_id'])) {
+    if (empty($_SESSION['user_id'])) {
         error('Nie jesteś zalogowany!');
         return;
     }
@@ -39,7 +39,7 @@
     mysqli_stmt_fetch($statement);
     mysqli_stmt_close($statement);
 
-    if (!$fetched_product_id) {
+    if (empty($fetched_product_id)) {
         mysqli_close($connection);
 
         error('Podany identyfikator produkt jest nieprawidłowy!');
@@ -55,7 +55,7 @@
     mysqli_stmt_fetch($statement);
     mysqli_stmt_close($statement);
 
-    if ($fetched_user_id) {
+    if (isset($fetched_user_id)) {
         mysqli_close($connection);
 
         error('Podany produkt znajduje się już w koszyku!');

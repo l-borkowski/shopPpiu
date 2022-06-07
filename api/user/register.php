@@ -69,7 +69,7 @@
     mysqli_stmt_fetch($statement);
     mysqli_stmt_close($statement);
 
-    if ($fetched_user_id) {
+    if (isset($fetched_user_id)) {
         mysqli_close($connection);
 
         error('Podany adres email jest już zajęty!');

@@ -8,7 +8,7 @@
         return;
     }
 
-    if (!isset($_SESSION['user_id'])) {
+    if (empty($_SESSION['user_id'])) {
         error('Nie jesteś zalogowany!');
         return;
     }
