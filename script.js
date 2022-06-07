@@ -106,3 +106,7 @@ witcher.addEventListener("click", function()
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
 });
+
+$.get('/api/user/show.php').done(function(response) {
+    $('#header_login').text('Witaj ' + response.user.name + '!');
+})
