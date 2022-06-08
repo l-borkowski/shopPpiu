@@ -15,8 +15,6 @@
         if (parameters.has('token')) {
             $.get('/api/purchase/capture.php', {
                 token: parameters.get('token')
-            }).done(function() {
-                window.location = '/transaction_successful.html';
             }).fail(function() {
                 window.location = '/transaction_failed.html';
             });
