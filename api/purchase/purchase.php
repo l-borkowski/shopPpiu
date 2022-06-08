@@ -45,8 +45,8 @@
         return;
     }
 
-    $token = fetch_paypal_paynament_token($fetched_price);
-    $link = get_paypal_paynement_link($token);
+    $token = paypal_fetch_paynament_token($fetched_price);
+    $link = paypal_get_paynement_link($token);
 
     if (empty($token)) {
         mysqli_close($connection);
