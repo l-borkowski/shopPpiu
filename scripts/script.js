@@ -1,5 +1,4 @@
 //MAIN_PAGE
-//slider
 
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
