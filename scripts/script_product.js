@@ -8,6 +8,10 @@ const main_spec_cuphead = document.querySelector("#main_spec_cuphead");
 const main_spec_rayman = document.querySelector("#main_spec_rayman");
 const main_spec_fallguys = document.querySelector("#main_spec_fallguys");
 const main_spec_gearsofwar = document.querySelector("#main_spec_gearsofwar");
+const main_spec_eldenring = document.querySelector("#main_spec_eldenring");
+const main_spec_dune = document.querySelector("#main_spec_dune");
+const main_spec_cyberpunk2077 = document.querySelector("#main_spec_cyberpunk2077");
+const main_spec_witcher = document.querySelector("#main_spec_witcher");
 var tag = document.createElement("p");
 
 if(varurl.includes("watchdogs"))
@@ -63,4 +67,40 @@ if(varurl.includes("gearsofwar"))
     tag.innerHTML = "Gears of War 4 to czwarta pełnoprawna odsłona kultowej serii futurystycznych strzelanin TPP. Za produkcję tytułu odpowiada studio The Coalition (wcześniej Black Tusk), założone przez wieloletniego producenta serii, Roda Fergussona.";
     main_descriptions.appendChild(tag);
     main_spec_gearsofwar.style.display = "inline";
+}
+if(varurl.includes("eldenring"))
+{
+    main_sliderbox_image_img.src = "../images/elden_ring.jpg";
+    main_sliderbox_descriptions.innerHTML = "<h1>Elden Ring</h1><p>Rok produkcji: 2022<br/>Producent: FromSoftware<br/>Forma: CD-Key</p><p>Cena:</p><h1>220PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    main_descriptions.innerHTML = "<h1>Opis gry</h1>";
+    tag.innerHTML = "Elden Ring to gra RPG akcji autorstwa japońskiego studia FromSoftware. Tym razem twórcy postanowili nawiązać współpracę ze znaną osobistością spoza branży gier wideo – pisarzem George’em R. R. Martinem, autorem sagi Pieśń Lodu i Ognia.";
+    main_descriptions.appendChild(tag);
+    main_spec_eldenring.style.display = "inline";
+}
+if(varurl.includes("dune"))
+{
+    main_sliderbox_image_img.src = "../images/dune.jpg";
+    main_sliderbox_descriptions.innerHTML = "<h1>Dune Spice Wars</h1><p>Rok produkcji: 2022<br/>Producent: Shiro Games<br/>Forma: CD-Key</p><p>Cena:</p><h1>250PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    main_descriptions.innerHTML = "<h1>Opis gry</h1>";
+    tag.innerHTML = "Dune: Spice Wars to RTS z elementami 4X, osadzony w uniwersum wykreowanym przez Franka Herberta. Tytuł został opracowany przez studio Shiro Games, czyli twórców m.in. ciepło przyjętego Northgard.";
+    main_descriptions.appendChild(tag);
+    main_spec_dune.style.display = "inline";
+}
+if(varurl.includes("cyberpunk2077"))
+{
+    main_sliderbox_image_img.src = "../images/cyberpunk_2077.jpg";
+    main_sliderbox_descriptions.innerHTML = "<h1>Cyberpunk 2077</h1><p>Rok produkcji: 2020<br/>Producent: CD Projekt RED<br/>Forma: CD-Key</p><p>Cena:</p><h1>180PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    main_descriptions.innerHTML = "<h1>Opis gry</h1>";
+    tag.innerHTML = "Cyberpunk 2077 to osadzona w otwartym świecie w klimacie science fiction gra RPG oparta na papierowym systemie fabularnym Cyberpunk. Cyberpunk 2077 został opracowany przez studio CD Projekt RED, które wsławiło się kultową serią o Wiedźminie.";
+    main_descriptions.appendChild(tag);
+    main_spec_cyberpunk2077.style.display = "inline";
+}
+if(varurl.includes("witcher"))
+{
+    main_sliderbox_image_img.src = "../images/witcher.jpg";
+    main_sliderbox_descriptions.innerHTML = "<h1>Wiedżmin 3</h1><p>Rok produkcji: 2015<br/>Producent: CD Projekt RED<br/>Forma: CD-Key</p><p>Cena:</p><h1>70PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    main_descriptions.innerHTML = "<h1>Opis gry</h1>";
+    tag.innerHTML = "Wiedżmin 3 to gra action RPG, stanowiąca trzecią część przygód Geralta z Rivii. Podobnie jak we wcześniejszych odsłonach cyklu, Wiedźmin 3: Dziki Gon bazuje na motywach twórczości literackiej Andrzeja Sapkowskiego, jednak nie jest bezpośrednią adaptacją żadnej z jego książek.";
+    main_descriptions.appendChild(tag);
+    main_spec_witcher.style.display = "inline";
 }

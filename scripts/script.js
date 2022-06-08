@@ -1,5 +1,5 @@
 //MAIN_PAGE
-
+//slider
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
 
@@ -69,6 +69,10 @@ elden.addEventListener("click", function()
     duna.style.background = "#363E44";
     cyber.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    elden_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    dune_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 duna.addEventListener("click", function()
@@ -81,6 +85,10 @@ duna.addEventListener("click", function()
     elden.style.background = "#363E44";
     cyber.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    dune_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    elden_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 cyber.addEventListener("click", function()
@@ -93,6 +101,10 @@ cyber.addEventListener("click", function()
     duna.style.background = "#363E44";
     elden.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    cyberpunk2077_button.style.display = "inline";
+    dune_button.style.display = "none";
+    elden_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 witcher.addEventListener("click", function()
@@ -105,4 +117,16 @@ witcher.addEventListener("click", function()
     duna.style.background = "#363E44";
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
+    witcher_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    elden_button.style.display = "none";
+    dune.style.display = "none";
 });
+
+//linki
+//sprawdz_button1 = document.querySelector("#sprawdz_button1");
+//sprawdz_button2 = document.querySelector("#sprawdz_button2");
+elden_button = document.querySelector("#button_eldenring");
+dune_button = document.querySelector("#button_dune");
+cyberpunk2077_button = document.querySelector("#button_cyberpunk2077");
+witcher_button = document.querySelector("#button_witcher");
