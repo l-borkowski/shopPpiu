@@ -1,56 +1,13 @@
-/*
-var http = require('http');
+var varurl = document.URL;
+const main_sliderbox_image_img = document.querySelector("#main_sliderbox_image_img");
+const main_sliderbox_descriptions = document.querySelector("#main_sliderbox_descriptions");
+const main_descriptions = document.querySelector("#main_descriptions");
+const main_spec = document.querySelector("#main_spec");
 
-
-//import { watchdogsbool } from "./script.js";
-//import { meatboybool } from "./script.js";
-//import { cupheadbool } from "./script.js";
-//import { raymanbool } from "./script.js";
-
-http.createServer(function (req, res) {
-    res.write(str); 
-    res.end(); 
-}).listen(8080);
-
-const sliderbox_image = document.querySelector("#main_sliderbox_image");
-
-if(watchdogsbool)
+if(varurl.includes("watchdogs"))
 {
-    sliderbox_image.src = "../images/cyberpunk2077.jpg";
+    main_sliderbox_image_img.src = "../images/cyberpunk_2077.jpg";
+    main_sliderbox_descriptions.innerHTML = "Działa";
+    main_descriptions.innerHTML = "Opis";
+    main_spec.innerHTML = "Spec";
 }
-if(meatboybool)
-{
-    sliderbox_image.src = "../images/cyberpunk2077.jpg";
-}
-if(cupheadbool)
-{
-    sliderbox_image.src = "../images/cyberpunk2077.jpg";
-}
-if(raymanbool)
-{
-    sliderbox_image.src = "../images/cyberpunk2077.jpg";
-}
-
-import str from './script.js';
-import watchdogsbool from './script.js';
-import meatboybool from './script.js';
-import cupheadbool from './script.js';
-import raymanbool from './script.js';
-//import fallguysbool from './script.js';
-
-console.log(str);
-console.log("Dziala");
-console.log("Watchdogs "+watchdogsbool);
-console.log("Meatboy " + meatboybool);
-console.log("cuphead " + cupheadbool);
-console.log("rayman " + raymanbool);
-console.log("fallguys "+ fallguysbools);
-
-
-const sliderbox_image = document.querySelector("#main_sliderbox_image")
-
-sliderbox_image.addEventListener("click", function()
-{
-    console.log("Klikam");
-});
-*/

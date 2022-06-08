@@ -1,19 +1,6 @@
 //MAIN_PAGE
 //slider
 
-const str = 'Hello world';
-let watchdogsbool = false;
- 
-export default watchdogsbool;
-export let meatboybool = false; 
-export let cupheadbool = true; 
-export let raymanbool = false;
-export let fallguysbool = false; 
-export let gearsofwarbool = false; 
-
-try{
-
-
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
 
@@ -76,7 +63,7 @@ const witcher = document.querySelector("#main_sliderbox_slider_else_box4");
 elden.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/elden_ring.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/elden_ring.jpg)";
     bannerboxh1.innerHTML = "Elden Ring (2022)";
     bannerboxp.innerHTML = "Elden Ring to gra RPG akcji autorstwa japońskiego studia FromSoftware.";
     elden.style.background = "#8d8d8d";
@@ -88,7 +75,7 @@ elden.addEventListener("click", function()
 duna.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/dune.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/dune.jpg)";
     bannerboxh1.innerHTML = "Dune Spice Wars (2022)";
     bannerboxp.innerHTML = "Dune: Spice Wars jest strategią czasu rzeczywistego z elementami podgatunku 4X.";
     duna.style.background = "#8d8d8d";
@@ -100,7 +87,7 @@ duna.addEventListener("click", function()
 cyber.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/cyberpunk_2077.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/cyberpunk_2077.jpg)";
     bannerboxh1.innerHTML = "Cyberpunk (2020)";
     bannerboxp.innerHTML = "Cyberpunk 2077 jest pierwszoosobową grą RPG z otwartym światem, wzbogaconą o elementy FPS-ów.";
     cyber.style.background = "#8d8d8d";
@@ -112,7 +99,7 @@ cyber.addEventListener("click", function()
 witcher.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/witcher.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/witcher.jpg)";
     bannerboxh1.innerHTML = "Witcher 3 (2015)";
     bannerboxp.innerHTML = "Witcher 3 to trzecia odsłona popularnej serii gier RPG opartej na prozie Andrzeja Sapkowskiego.";
     witcher.style.background = "#8d8d8d";
@@ -120,14 +107,6 @@ witcher.addEventListener("click", function()
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
 });
-/*
-let watchdogsbool = false;
-let meatboybool = false; 
-let cupheadbool = false; 
-let raymanbool = false;
-let fallguysbool = false; 
-let gearsofwarbool = false; 
-*/
 
 //SHOP_PRODUCT
 const sliderbox_image = document.querySelector("#main_sliderbox_image");
@@ -136,14 +115,12 @@ container_slider_boxes[0].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //watchdogsbool = true;
     }
 );
 container_slider_boxes[1].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //meatboybool = true;
     }
 );
 
@@ -151,38 +128,23 @@ container_slider_boxes[2].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //cupheadbool = true; 
     }
 );
 container_slider_boxes[3].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //raymanbool = true;
     }
 );
 container_slider_boxes[4].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //fallguysbool = true; 
     }
 );
 container_slider_boxes[5].addEventListener("click", function()
     {
         sliderbox_image.src = "../images/cyberpunk2077.jpg";
         console.log("click");
-        //gearsofwarbool = true; 
     }
 );
-/*
-module.export = { watchdogsbool };
-module.export = { meatboybool };
-module.export = { cupheadbool  };
-module.export = { raymanbool };
-*/
-}
-catch
-{
-
-}
