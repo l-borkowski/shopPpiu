@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="transaction_successful.css"/>
     <title>Sklep</title>
+
+    <!-- Kod Jakuba - sprawdzanie statusu transakcji oraz zatwierdzanie płatności w systemie PayPal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        const parameters = new URLSearchParams(window.location.search);
+
+        if (parameters.has('token')) {
+            $.get('/api/purchase/capture.php', {
+                token: parameters.get('token')
+            }).done(function() {
+                window.location = '/transaction_successful.html';
+            }).fail(function() {
+                window.location = '/transaction_failed.html';
+            });
+        } else {
+            window.location = '/transaction_failed.html';
+        }
+    </script>
+    
 </head>
 
 
