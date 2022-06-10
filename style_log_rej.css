@@ -53,10 +53,8 @@ header
 #nav_bar
 {
     width: 20%;
-    height: 1080px;
     background-color: #1F2326;
     text-transform: uppercase;
-    border-right: 1px solid white;
     float: left;
 }
 #nav_bar > ul
@@ -88,8 +86,7 @@ header
 #main_sliderbox
 {
 	
-    width: 79.94%;
-    height: 1080px;
+    width: 79%;
     background-color: #1F2326;
     float: left;
     color: white;
