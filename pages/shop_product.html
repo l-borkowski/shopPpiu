@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/style_product.css"/>
     <!-- Import czcionki-->
@@ -44,7 +45,8 @@
     <div class="main">
         <div id="main_sliderbox">
             <div id="main_sliderbox_image">
-            <img src="../images/edBK.jpg" width="100%" height="500px" id="main_sliderbox_image_img"/>
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<img src="../images/edBK.jpg" width="100%" height="500px" id="main_sliderbox_image_img"/>-->
             </div>
             <div id="main_sliderbox_descriptions">
                 <h1>Elden Ring</h1>
@@ -56,6 +58,50 @@
                 <button id="button_buy">Kup Teraz</button>
                 <button id="button_add">Dodaj do koszyka</button>
             </div>
+            <!--Slider-->
+            <button id="prevBtn" style="float: left;">
+                <img src="../images/to_left.png" width="35%" height=auto  style="vertical-align:middle"/>
+            </button>
+            <div id="main_offers_container">
+                <div id="main_offers_container_slider">
+                        <a href="shop_product.html?watchdogs" class="watchdogs_link">
+                            <img src="../images/cover6.jpg" id="lastClone" class="main_offers_container_box" width="178px" height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?meatboy"  class="meatboy_link">
+                            <img src="../images/cover1.jpeg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?cuphead"  class="cuphead_link">
+                            <img src="../images/cover2.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?rayman"  class="rayman_link">
+                            <img src="../images/cover3.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?fallguys"  class="fallguys_link">
+                            <img src="../images/cover4.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?gearsofwar"  class="gearsofwar_link">
+                            <img src="../images/cover5.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?watchdogs"  class="watchdogs_link">
+                            <img src="../images/cover6.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?meatboy"  class="meatboy_link">
+                            <img src="../images/cover1.jpeg" id="firstClone" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?cuphead"  class="cuphead_link">
+                            <img src="../images/cover2.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?rayman" class="rayman_link">
+                            <img src="../images/cover3.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html" class="fallguys_link">
+                            <img src="images/cover4.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                </div> 
+            </div>  
+            <button id="nextBtn" style="float: left">
+                <img src="../images/to_right.png" width="35%" height=auto style="vertical-align:middle"/>
+            </button> 
         </div>
         <div id="main_descriptions">
             <h1>Opis gry</h1>
