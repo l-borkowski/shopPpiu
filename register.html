@@ -94,7 +94,7 @@
 			password: $("#password").val(),
 			captcha: grecaptcha.getResponse()
 		}).done(function() {
-			location.window = "login.html";
+			window.location.replace("login.html");
 		}).fail(function(response) {
 			const data = response.responseJSON;
 			document.getElementById('name').classList.replace('form_el', 'red');

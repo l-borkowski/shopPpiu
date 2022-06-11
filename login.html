@@ -89,7 +89,7 @@
 			email: $("#email").val(),
 			password: $("#password").val()
 		}).done(function() {
-			location.window = "index.html";
+			window.location.replace("index.html");
 		}).fail(function(response) {
 			const data = response.responseJSON;
 			document.getElementById('email').classList.replace('form_el', 'red');
