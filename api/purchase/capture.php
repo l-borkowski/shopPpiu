@@ -26,7 +26,7 @@
         return;
     }
 
-    $status = fetch_paypal_paynament_status($token);
+    $status = paypal_fetch_paynament_status($token);
 
     if (empty($status)) {
         error('Nie można zatwierdzić płatność!');

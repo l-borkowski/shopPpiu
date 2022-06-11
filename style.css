@@ -46,7 +46,6 @@ header
 #nav_bar
 {
     width: 20%;
-    height: 2000px;
     text-transform: uppercase;
     float: left;
 }
@@ -68,8 +67,7 @@ header
 }
 #main_sliderbox
 {
-    width: 79.94%;
-    height: 433px;
+    width: 79%;
     float: left;
     color: white;
     border-left: 1px solid white;

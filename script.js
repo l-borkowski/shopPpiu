@@ -110,3 +110,4 @@ witcher.addEventListener("click", function()
 $.get('/api/user/show.php').done(function(response) {
     $('#header_login').text('Witaj ' + response.user.name + '!');
 })
+

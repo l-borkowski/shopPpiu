@@ -37,4 +37,6 @@
         return;
     }
 
+    $product['pictures'] = explode(';', $product['pictures']);
+
     success('Zwórocono pomyślnie produkt!', ['product' => $product]);
