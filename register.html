@@ -8,238 +8,104 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="style_log_rej.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style_log_rej.css" />
 	<title>Sklep</title>
 </head>
 
-
-
 <body>
-
-
-
 	<header>
-		<div id="header_logo">
-			<img src="images/game-boy_white.png" width="160px" height="60px" />
-		</div>
+		<div id="header_logo"> <img src="assets/images/game-boy_white.png" width="160px" height="60px" /> </div>
 		<div id="header_searchbar">
-			<input type="text" placeholder=" Search" id="header_searchbar_input" />
-		</div>
+			<input type="text" placeholder=" Search" id="header_searchbar_input" /> </div>
 		<div id="header_login">
-			<p><a href="login.html">Zaloguj się</a> | <a href="register.html">Zarejestruj</a> | <a href="#"><img src="images/cart_icon.png"
-						width="20px" height="20px" style="vertical-align:middle" /></a></p>
+			<p><a href="login.html">Zaloguj się</a> | <a href="register.html">Zarejestruj</a> |
+				<a href="#"><img src="assets/images/cart_icon.png" width="20px" height="20px" style="vertical-align:middle" /></a>
+			</p>
 		</div>
 	</header>
-
-
-
-
 	<div style="clear: both;"></div>
-
-
 	<nav>
 		<div id="nav_bar">
 			<ul>
-				<li><a href="#"><img src="images/glowna.png" width="20px" height="20px"
-							style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;home</a></li>
-				<li><a href="#"><img src="images/kategorie.png" width="20px" height="20px"
-							style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
-				<li><a href="#"><img src="images/promocje.png" width="20px" height="20px"
-							style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;promocje</a></li>
-				<li><a href="#"><img src="images/nowosci.png" width="20px" height="20px"
-							style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;nowości</a></li>
-				<li><a href="#"><img src="images/onas.png" width="20px" height="20px"
-							style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;o nas</a></li>
+				<li>
+					<a href="#"><img src="assets/images/glowna.png" width="20px" height="20px" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;home</a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/images/kategorie.png" width="20px" height="20px" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/images/promocje.png" width="20px" height="20px" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;promocje</a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/images/nowosci.png" width="20px" height="20px" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;nowości</a>
+				</li>
+				<li>
+					<a href="#"><img src="assets/images/onas.png" width="20px" height="20px" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;o nas</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
-
-
-
-
-
 	<main>
 		<div id="main_sliderbox">
-
 			<div id="main_sliderbox_slider">
 				<div id="topic_label">Rejestracja użytkownika </div>
-
-				<a href="#">
-					<div id="login_with_google">
-
-						<img class="favicon" src="images/google_login.png" id="google_img">
-						<div id="login_with_google_text">
-							Sign up with google
-						</div>
-					</div>
-				</a>
-
-
-				<a href="#" style="text-decoration: none;">
-					<div id="login_with_facebook">
-
-						<img class="favicon" src="images/facebook_login.png" id="facebook_img">
-
-						<div id="login_with_facebook_text">
-							Sign up with facebook
-						</div>
-
-					</div>
-				</a>
-
-
-				<br><br><br>
-				<p id="lub">-LUB-</p>
-
-
+				<br>
+				<br>
+				<br>
 				<div id="form">
-					<input id="name" type="text" class="form_el" placeholder="IMIE I NAZWISKO" name="text"><br>
-					<input id="email" type="text" class="form_el" placeholder="ADRES EMAIL" name="text"><br>
+					<input id="name" type="text" class="form_el" placeholder="IMIE I NAZWISKO" name="text">
+					<br>
+					<input id="email" type="text" class="form_el" placeholder="ADRES EMAIL" name="text">
+					<br>
 					<input id="password" type="password" class="form_el" placeholder="HASŁO" name="text">
-
-					<button type="button" id="btnToggle" class="toggle">
-
-						<i id="togglePassword" class="fa fa-eye fa-lg"></i>
-
-
-					</button><br>
-
+					<button type="button" id="btnToggle" class="toggle"> <i id="togglePassword" class="fa fa-eye fa-lg"></i> </button>
+					<br>
 					<p id="demo" class="demo">Błędny adres lub hasło</p>
-
 					<div id="captcha" class="g-recaptcha" data-sitekey="6LdSavsfAAAAAJHNP_HWLgQFcY98jf6KqiFWA0LI" data-theme="dark"></div>
-					<div class="g-signin2" data-onsuccess="onSignIn"></div>
-
+					<br>
+					<p id="demo" class="demo"></p>
 				</div>
-
-				<div id=main_button>
+				<div id="main_button">
 					<a href="#" id="przycisk">
-						<div id=button>
-							ZAREJESTRUJ
-						</div>
+						<div id="button"> ZAREJESTRUJ </div>
 					</a>
 				</div>
-
 				<div id="main_accounts">
 					<p id="account"><a>Masz juz konto?</a> <a href="login.html" id="registration">Zaloguj się</a></p>
-
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</main>
-
-
-
 	<div style="clear: both;"></div>
-
-
-
 	<script>
-
-		const togglePassword = document.querySelector('#togglePassword');
-		const password = document.querySelector('#password');
-
-		togglePassword.addEventListener('click', function (e) {
-			// toggle the type attribute
-			const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-			password.setAttribute('type', type);
-			// toggle the eye slash icon
-			this.classList.toggle('fa-eye-slash');
+	const togglePassword = document.querySelector('#togglePassword');
+	const password = document.querySelector('#password');
+	togglePassword.addEventListener('click', function(e) {
+		const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+		password.setAttribute('type', type);
+		this.classList.toggle('fa-eye-slash');
+	});
+	$('#button').click(function() {
+		var tag = document.getElementById('demo');
+		$.post('http://146.59.44.209/api/user/register.php', {
+			name: $("#name").val(),
+			email: $("#email").val(),
+			password: $("#password").val(),
+			captcha: grecaptcha.getResponse()
+		}).done(function() {
+			window.location.replace("login.html");
+		}).fail(function(response) {
+			const data = response.responseJSON;
+			document.getElementById('name').classList.replace('form_el', 'red');
+			document.getElementById('email').classList.replace('form_el', 'red');
+			document.getElementById('password').classList.replace('form_el', 'red');
+			tag.classList.remove('demo');
+			$('#demo').text(data.message);
+			grecaptcha.reset();
 		});
-
-
-		$('#button').click(function () {
-
-			const password = document.querySelector('#password');
-			const email = document.querySelector('#email');
-
-			var tag = document.getElementById('demo');
-			var pass = document.getElementById("password").value;
-			var name = document.getElementById("name").value;
-			var email2 = document.getElementById("email").value;
-
-			document.getElementById('password').classList.replace('red', 'form_el');
-            document.getElementById('name').classList.replace('red', 'form_el');
-            document.getElementById('email').classList.replace('red', 'form_el');
-
-
-            if(CheckLength(pass)==false && CheckNumber(pass)== false)
-            {
-                document.getElementById('password').classList.replace('form_el', 'red');
-                tag.innerHTML = 'Hasło musi zawierac conajmniej 7 znaków i cyfrę';
-                tag.classList.remove('demo');
-            }
-            
-            if(CheckLength(name)==false)
-            {
-                document.getElementById('name').classList.replace('form_el', 'red');
-                tag.innerHTML = 'Login musi zawierać conajmniej 7 znaków';
-                tag.classList.remove('demo');
-            }
-            if(CheckEmail(email2)==false)
-            {
-                document.getElementById('email').classList.replace('form_el', 'red');
-                tag.innerHTML = 'Niepoprawny email';
-                tag.classList.remove('demo');
-            }
-
-			
-			
-			$.post('http://146.59.44.209/api/user/register.php', {
-				name: $("#name").val(), email: $("#email").val(), password: $("#password").val(), captcha: grecaptcha.getResponse()
-			}).done(function () {
-				location.replace("login.html");
-			}).fail(function (response) {
-				alert('Rejestracja nieudana, wpisz poprawne wartości');
-				grecaptcha.reset();
-				
-			});
-		
-		
-		});
-
-		
-		function CheckLength(x) {
-			if (x.length >= 7) {
-				return true;
-			}
-			else {
-				return false;
-			}
-		}
-
-		function CheckNumber(x) {
-			var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-			for (var znak of x) {
-				if (numbers.includes(znak)) {
-					return true;
-				}
-			}
-
-			return false;
-		}
-
-		function CheckEmail(z) {
-			var małpa = ['@'];
-
-			for (var znak of z) {
-				if (małpa.includes(znak)) {
-					return true;
-				}
-			}
-
-			return false;
-		}
-		
-		
-
+	});
 	</script>
-
 </body>
 
 </html>
