@@ -107,4 +107,7 @@ witcher.addEventListener("click", function()
     elden.style.background = "#363E44";
 });
 
-// elo
+$.get('/api/user/show.php').done(function(response) {
+    $('#header_login').text('Witaj ' + response.user.name + '!');
+})
+
