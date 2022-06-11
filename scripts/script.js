@@ -130,3 +130,7 @@ elden_button = document.querySelector("#button_eldenring");
 dune_button = document.querySelector("#button_dune");
 cyberpunk2077_button = document.querySelector("#button_cyberpunk2077");
 witcher_button = document.querySelector("#button_witcher");
+
+$.get('/api/user/show.php').done(function (response) {
+    $('#header_login').text('Witaj ' + response.user.name + '!');
+})
