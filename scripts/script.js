@@ -131,6 +131,24 @@ dune_button = document.querySelector("#button_dune");
 cyberpunk2077_button = document.querySelector("#button_cyberpunk2077");
 witcher_button = document.querySelector("#button_witcher");
 
-$.get('/api/user/show.php').done(function (response) {
+
+
+$.get('/api/user/show.php').done(function(response) {
     $('#header_login').text('Witaj ' + response.user.name + '!');
 })
+
+/// Search sumbit
+
+var input = document.getElementById("header_searchbar_input");
+
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      onSearch();
+    }
+  });
+
+async function onSearch() {
+    let value = document.getElementById("header_searchbar_input").value;
+    window.location.href = "search_results/main.html?search=" + value;
+}
