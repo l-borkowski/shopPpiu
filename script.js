@@ -107,6 +107,11 @@ witcher.addEventListener("click", function()
     elden.style.background = "#363E44";
 });
 
+
+$.get('/api/user/show.php').done(function(response) {
+    $('#header_login').text('Witaj ' + response.user.name + '!');
+})
+
 /// Search sumbit
 
 var input = document.getElementById("header_searchbar_input");
@@ -122,4 +127,5 @@ async function onSearch() {
     let value = document.getElementById("header_searchbar_input").value;
     window.location.href = "search_results/main.html?search=" + value;
 }
-// elo
+
+
