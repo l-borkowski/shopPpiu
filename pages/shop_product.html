@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/style_product.css"/>
+    <!-- Import czcionki-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <title>Sklep</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header" >
+            <div class="search__container">
+                <input type="text" class="search__input" placeholder=" Search"/>
+            </div>
+            <div id="header_login">
+                <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img src="../images/cart_icon.png" width="33px" height="33px" style="vertical-align:middle"/></a></p>
+            </div>
+        </div>
+        <div class="navigator">
+
+            <!--LOGO-->
+            <div id="header_logo">
+                <img src ="../images/game-boy_white.png" width="70%" class="center"/>
+            </div>
+
+            <!--NAV BAR-->
+            <div id="nav_bar">
+                <ul>
+                    <li style="font-weight: 400"><a class="four" href="#"><img src="../images/glowna.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;home</a></li>
+                    <li><a class="four" href="#"><img src="../images/search.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;przeglądaj&nbsp;</a></li>
+                    <li><a class="four" href="#"><img src="../images/kategorie.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
+                    <li><a class="prom" href="#"><img src="../images/nowosci.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;promocje</a></li>
+                    <li><a class="four" href="#"><img src="../images/promocje.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;nowości</a></li>
+                    <li><a class="four" href="#"><img src="../images/onas.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;o nas</a></li>
+                </ul>
+            </div>
+
+        </div>
+    <div class="main">
+        <div id="main_sliderbox">
+            <div id="main_sliderbox_image">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<img src="../images/edBK.jpg" width="100%" height="500px" id="main_sliderbox_image_img"/>-->
+            </div>
+            <div id="main_sliderbox_descriptions">
+                <h1>Elden Ring</h1>
+                <p>Rok produkcji: 2021<br/>
+                Producent: FromSoftware<br/>
+                Forma: CD-Key</p>
+                <p>Cena:</p>
+                <h1>194PLN</h1>
+                <button id="button_buy">Kup Teraz</button>
+                <button id="button_add">Dodaj do koszyka</button>
+            </div>
+            <!--Slider-->
+            <button id="prevBtn" style="float: left;">
+                <img src="../images/to_left.png" width="35%" height=auto  style="vertical-align:middle"/>
+            </button>
+            <div id="main_offers_container">
+                <div id="main_offers_container_slider">
+                        <a href="shop_product.html?watchdogs" class="watchdogs_link">
+                            <img src="../images/cover6.jpg" id="lastClone" class="main_offers_container_box" width="178px" height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?meatboy"  class="meatboy_link">
+                            <img src="../images/cover1.jpeg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?cuphead"  class="cuphead_link">
+                            <img src="../images/cover2.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?rayman"  class="rayman_link">
+                            <img src="../images/cover3.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?fallguys"  class="fallguys_link">
+                            <img src="../images/cover4.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?gearsofwar"  class="gearsofwar_link">
+                            <img src="../images/cover5.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?watchdogs"  class="watchdogs_link">
+                            <img src="../images/cover6.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?meatboy"  class="meatboy_link">
+                            <img src="../images/cover1.jpeg" id="firstClone" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?cuphead"  class="cuphead_link">
+                            <img src="../images/cover2.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html?rayman" class="rayman_link">
+                            <img src="../images/cover3.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                        <a href="shop_product.html" class="fallguys_link">
+                            <img src="images/cover4.jpg" class="main_offers_container_box" width="178px"  height="150px" style="border-radius:30px;"/>
+                        </a>
+                </div> 
+            </div>  
+            <button id="nextBtn" style="float: left">
+                <img src="../images/to_right.png" width="35%" height=auto style="vertical-align:middle"/>
+            </button> 
+        </div>
+        <div id="main_descriptions">
+            <h1>Opis gry</h1>
+            <p>Elden Ring to gra RPG akcji opracowana przez 
+                FromSoftware i wydana przez Bandai Namco 
+                Entertainment. Gra została wyreżyserowana 
+                przez Hidetakę Miyazakiego i stworzona we 
+                współpracy z powieściopisarzem fantasy Georgem 
+                R.R. Martinem, który dostarczył materiał na 
+                scenerię gry.
+            </p>
+        </div>
+            <div id="main_spec">
+                <div id="main_spec_eldenring"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> INTEL CORE I5-8400 or AMD RYZEN 3 3300X</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 12 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10/11</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> INTEL CORE I7-8700K or AMD RYZEN 5 3600X</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 16 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_watchdogs"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows Vista (SP2), Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core 2 Quad Q8400 or AMD Phenom II X4 940</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 6 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> Nvidia Geforce GTX 460 or AMD Radeon HD 5770</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span>25 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> DirectX 9.0c Compatible Sound Card with Latest Drivers</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span>Windows Vista (SP2), Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>Intel Core i7-3770 or AMD FX-8350 X8</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span>8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Nvidia Geforce GTX 560 ti or AMD Radeon HD 7850</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 25 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span>DirectX 9.0c Compatible Sound Card with Latest Drivers</p>
+                    </div>
+                </div>
+                <div id="main_spec_meatboy"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Microsoft® Windows® XP / Vista / 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>1.4GHz or faster</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 1 GB RAM </p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Graphics Card made within the last 4 years(2011)</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span>DirectX® 9.0c</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 300 MB </p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Microsoft® Windows® XP / Vista / 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>1.4GHz or faster</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 1 GB RAM </p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Graphics Card made within the last 4 years(2011)</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span>DirectX® 9.0c</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 300 MB </p>
+                    </div>
+                </div>
+                <div id="main_spec_cuphead"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core2 Duo E8400 or AMD Athlon 64 X2 6000+</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 3 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Geforce 9600 GT or AMD HD 3870 512MB</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 4 GB dostępnej przestrzeni</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core2 Duo E8400 or AMD Athlon 64 X2 6000+</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 3 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Geforce 9600 GT or AMD HD 3870 512MB</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 4 GB dostępnej przestrzeni</p>
+                    </div>
+                </div>
+                <div id="main_spec_rayman"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows XP, Windows Vista, 7, 8 </p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>  Intel Pentium IV @ 3.0 GHz or AMD Athlon64 3000</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 2 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>nVidia GeForce 6800GT or AMD Radeon X1950 Pro</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 6 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> DirectX Compatible Sound Card with latest drivers</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows XP, Windows Vista, 7, 8</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>Intel Core 2 Duo E4400 @ 2.0 GHz or AMD Athlon64 X2 3800</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 2 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>nVidia GeForce 9600GT or higher, AMD Radeon HD3850</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 6 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span>DirectX Compatible Sound Card with latest drivers</p>
+                    </div>
+                </div>
+                <div id="main_spec_fallguys"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i5 or AMD equivalent</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GTX 660 or AMD Radeon HD 7950</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 2 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i5 or AMD equivalent</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GTX 660 or AMD Radeon HD 7950</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 11</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 2 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_gearsofwar"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i5-3470 or AMD FX-6300 </p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 750/Radeon R7 260X </p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 80 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i5-4690 or AMD FX-8350</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVIDIA GEFORCE GTX 970/Radeon R9 290X</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_eldenring"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core I5-8400 or AMD RYZEN 3 3300X </p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 12 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>  NVIDIA GEFORCE GTX 1060 or AMD RADEON RX 580 </p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core I7-8700K or AMD RYZEN 5 3600X</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 16 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>NVIDIA GEFORCE GTX 1070 8 or AMD RADEON RX VEGA 56</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 60 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_duna"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10, 11</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>  Intel Core i5 2.5 GHz or AMD equivalent </p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>  NVidia GTX 1050 or AMD equivalent </p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 4 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10, 11</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>  Intel Core i7 2.8GHz or AMD equivalent</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 16 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> NVidia GTX 1080 or AMD equivalent</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 4 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_cyberpunk2077"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i5-3570K or AMD FX-8310 </p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>  NVIDIA GeForce GTX 970 or AMD Radeon RX 470 </p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 70 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 10</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel Core i7-4790 or AMD Ryzen 3 3200G</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 12 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span> GTX 1060 6GB or GTX 1660 Super or Radeon RX 590</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 70 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+                <div id="main_spec_witcher"style="display: none;">
+                    <div id="main_spec_min">
+                        <h1>Minimalne</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span> Intel CPU Core i5-2500K or AMD CPU Phenom II X4 940</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 6 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Nvidia GPU GeForce GTX 660 or AMD GPU Radeon HD 7870 </p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 35 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                    <div id="main_spec_rec">
+                        <h1>Zalecane</h1>
+                        <p><span style="font-weight:500; color: white;">System operacyjny:</span> Windows 7</p>
+                        <p><span style="font-weight:500; color: white;">Procesor:</span>  Intel CPU Core i7 3770 or AMD CPU AMD FX-8350</p>
+                        <p><span style="font-weight:500; color: white;">Pamięć:</span> 8 GB RAM</p>
+                        <p><span style="font-weight:500; color: white;">Karta graficzna:</span>Nvidia GPU GeForce GTX 770 or AMD GPU Radeon R9 290</p>
+                        <p><span style="font-weight:500; color: white;">DirectX:</span> Wersja 12</p>
+                        <p><span style="font-weight:500; color: white;">Miejsce na dysku:</span> 35 GB dostępnej przestrzeni</p>
+                        <p><span style="font-weight:500; color: white;">Karta dźwiękowa:</span> Windows Compatible Audio Device</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div style="clear: both;"></div>
+    <script src="../scripts/script_product.js"></script>
+</body>
+</html>

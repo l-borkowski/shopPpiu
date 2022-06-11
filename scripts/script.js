@@ -1,3 +1,4 @@
+//MAIN_PAGE
 //slider
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
@@ -6,7 +7,6 @@ const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 let counter = 1;
-const size = container_slider_boxes[0].clientWidth;
 
 container_slider.style.transform = "translateX(-258px)";
 
@@ -62,50 +62,75 @@ const witcher = document.querySelector("#main_sliderbox_slider_else_box4");
 elden.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/elden_ring.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/elden_ring.jpg)";
     bannerboxh1.innerHTML = "Elden Ring (2022)";
     bannerboxp.innerHTML = "Elden Ring to gra RPG akcji autorstwa japońskiego studia FromSoftware.";
     elden.style.background = "#8d8d8d";
     duna.style.background = "#363E44";
     cyber.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    elden_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    dune_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 duna.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/dune.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/dune.jpg)";
     bannerboxh1.innerHTML = "Dune Spice Wars (2022)";
     bannerboxp.innerHTML = "Dune: Spice Wars jest strategią czasu rzeczywistego z elementami podgatunku 4X.";
     duna.style.background = "#8d8d8d";
     elden.style.background = "#363E44";
     cyber.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    dune_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    elden_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 cyber.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/cyberpunk_2077.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/cyberpunk_2077.jpg)";
     bannerboxh1.innerHTML = "Cyberpunk (2020)";
     bannerboxp.innerHTML = "Cyberpunk 2077 jest pierwszoosobową grą RPG z otwartym światem, wzbogaconą o elementy FPS-ów.";
     cyber.style.background = "#8d8d8d";
     duna.style.background = "#363E44";
     elden.style.background = "#363E44";
     witcher.style.background = "#363E44";
+    cyberpunk2077_button.style.display = "inline";
+    dune_button.style.display = "none";
+    elden_button.style.display = "none";
+    witcher_button.style.display = "none";
 });
 
 witcher.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(images/witcher.jpg)";
+    bannerbox.style.backgroundImage = "url(../images/witcher.jpg)";
     bannerboxh1.innerHTML = "Witcher 3 (2015)";
     bannerboxp.innerHTML = "Witcher 3 to trzecia odsłona popularnej serii gier RPG opartej na prozie Andrzeja Sapkowskiego.";
     witcher.style.background = "#8d8d8d";
     duna.style.background = "#363E44";
     cyber.style.background = "#363E44";
     elden.style.background = "#363E44";
+    witcher_button.style.display = "inline";
+    cyberpunk2077_button.style.display = "none";
+    elden_button.style.display = "none";
+    dune.style.display = "none";
 });
+
+//linki
+//sprawdz_button1 = document.querySelector("#sprawdz_button1");
+//sprawdz_button2 = document.querySelector("#sprawdz_button2");
+elden_button = document.querySelector("#button_eldenring");
+dune_button = document.querySelector("#button_dune");
+cyberpunk2077_button = document.querySelector("#button_cyberpunk2077");
+witcher_button = document.querySelector("#button_witcher");
+
 
 
 $.get('/api/user/show.php').done(function(response) {
@@ -127,5 +152,3 @@ async function onSearch() {
     let value = document.getElementById("header_searchbar_input").value;
     window.location.href = "search_results/main.html?search=" + value;
 }
-
-
