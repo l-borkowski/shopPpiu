@@ -107,4 +107,19 @@ witcher.addEventListener("click", function()
     elden.style.background = "#363E44";
 });
 
+/// Search sumbit
+
+var input = document.getElementById("header_searchbar_input");
+
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      onSearch();
+    }
+  });
+
+async function onSearch() {
+    let value = document.getElementById("header_searchbar_input").value;
+    window.location.href = "search_results/main.html?search=" + value;
+}
 // elo
