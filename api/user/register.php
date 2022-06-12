@@ -13,7 +13,7 @@
         return;
     }
 
-    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['password']) || empty($_POST['captcha'])) {
+    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['password'])) {
         error('Nie podano danych do rejestracji!');
         return;
     }
@@ -21,15 +21,14 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $captcha = $_POST['captcha'];
 
-    if (strlen($name) < 3 || strlen($name) > 128) {
-        error('Nazwa użytkownika musi posiadać od 3 do 128 znaków!');
+    if (strlen($name) < 3 || strlen($name) > 64) {
+        error('Nazwa użytkownika musi posiadać od 3 do 64 znaków!');
         return;
     }
 
-    if (strlen($email) < 6 || strlen($email) > 128) {
-        error('Adres email musi posiadać od 6 do 128 znaków!');
+    if (strlen($email) < 6 || strlen($email) > 64) {
+        error('Adres email musi posiadać od 6 do 64 znaków!');
         return;
     }
 
@@ -45,14 +44,6 @@
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         error('Podany adres email jest nieprawidłowy!');
-        return;
-    }
-
-    $response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . GOOGLE_RECAPTCHA_SECRET . '&response=' . $captcha);
-    $parsed = json_decode($response);
-
-    if (!$parsed->success) {
-        error('Podany kod captcha jest nieprawidłowy!');
         return;
     }
 
