@@ -1,5 +1,6 @@
 
 var varurl = document.URL;
+
 const main_sliderbox_image_img = document.querySelector("#main_sliderbox_image_img");
 const main_sliderbox_image = document.querySelector("#main_sliderbox_image");
 const main_sliderbox_descriptions = document.querySelector("#main_sliderbox_descriptions");
@@ -15,18 +16,30 @@ const main_spec_dune = document.querySelector("#main_spec_dune");
 const main_spec_cyberpunk2077 = document.querySelector("#main_spec_cyberpunk2077");
 const main_spec_witcher = document.querySelector("#main_spec_witcher");
 var tag = document.createElement("p");
+/*
+async function fetchAsync(name) {
+    let url = 'http://146.59.44.209/api/product/show.php?'+name;
+    let response = await fetch(url);
+    let product = await response.json();
+    return product;
+}
 
-if(varurl.includes("watchdogs"))
+//const params = new URLSearchParams(window.location.search);
+if(varurl.includes("product_id=1"))
 {
+    //fetchAsync("product_id=1");
+    //var product = params.get("product_id");
+    //main_sliderbox_descriptions.innerHTML = <h1>{{product.title}}</h1> 
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/DqoQG_XYF-8?'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/watchdogs.jpg";
-    main_sliderbox_descriptions.innerHTML = "<h1>Watchdogs</h1><p>Rok produkcji: 2014<br/>Producent: Ubisoft<br/>Forma: CD-Key</p><p>Cena:</p><h1>120PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    //main_sliderbox_descriptions.innerHTML = "<h1>Watchdogs</h1><p>Rok produkcji: 2014<br/>Producent: Ubisoft<br/>Forma: CD-Key</p><p>Cena:</p><h1>120PLN</h1><button id='button_buy'>Kup Teraz</button><button id='button_add'>Dodaj do koszyka</button>";
+    
     main_descriptions.innerHTML = "<h1>Opis gry</h1>";
     tag.innerHTML = "Watch Dogs to przygodowa gra akcji o otwartym świecie wyprodukowana przez Ubisoft Montreal. Gra została wydana 27 maja 2014 roku[6]. Jest to zawierający wpływy cyberpunkowe tytuł, który umożliwia graczowi włamywanie się do różnych systemów elektronicznych, co pomaga mu w osiągnięciu jego celów. Produkcja została zaprezentowana po raz pierwszy podczas konferencji prasowej Ubisoftu. ";
     main_descriptions.appendChild(tag);
     main_spec_watchdogs.style.display = "inline";
 }
-if(varurl.includes("meatboy"))
+if(varurl.includes("product_id=2"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/eILvkKnMxWY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/meatboy.jpg";
@@ -36,7 +49,7 @@ if(varurl.includes("meatboy"))
     main_descriptions.appendChild(tag);
     main_spec_meatboy.style.display = "inline";
 }
-if(varurl.includes("cuphead"))
+if(varurl.includes("product_id=3"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/NN-9SQXoi50' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/cuphead.jpg";
@@ -46,7 +59,7 @@ if(varurl.includes("cuphead"))
     main_descriptions.appendChild(tag);
     main_spec_cuphead.style.display = "inline";
 }
-if(varurl.includes("rayman"))
+if(varurl.includes("product_id=4"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/afqO1qGr2XM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/rayman.jpg";
@@ -56,7 +69,7 @@ if(varurl.includes("rayman"))
     main_descriptions.appendChild(tag);
     main_spec_rayman.style.display = "inline";
 }
-if(varurl.includes("fallguys"))
+if(varurl.includes("product_id=5"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/Wj3dUvGLjNQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/fallguys.jpg";
@@ -66,7 +79,7 @@ if(varurl.includes("fallguys"))
     main_descriptions.appendChild(tag);
     main_spec_fallguys.style.display = "inline";
 }
-if(varurl.includes("gearsofwar"))
+if(varurl.includes("product_id=6"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/XrfVfRV0zSg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/gearsofwar.png";
@@ -76,7 +89,7 @@ if(varurl.includes("gearsofwar"))
     main_descriptions.appendChild(tag);
     main_spec_gearsofwar.style.display = "inline";
 }
-if(varurl.includes("eldenring"))
+if(varurl.includes("product_id=7"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/E3Huy2cdih0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/elden_ring.jpg";
@@ -86,7 +99,7 @@ if(varurl.includes("eldenring"))
     main_descriptions.appendChild(tag);
     main_spec_eldenring.style.display = "inline";
 }
-if(varurl.includes("dune"))
+if(varurl.includes("product_id=8"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/9lFx4wfc8Tc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/dune.jpg";
@@ -96,7 +109,7 @@ if(varurl.includes("dune"))
     main_descriptions.appendChild(tag);
     main_spec_dune.style.display = "inline";
 }
-if(varurl.includes("cyberpunk2077"))
+if(varurl.includes("product_id=9"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/8X2kIfS6fb8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/cyberpunk_2077.jpg";
@@ -106,7 +119,7 @@ if(varurl.includes("cyberpunk2077"))
     main_descriptions.appendChild(tag);
     main_spec_cyberpunk2077.style.display = "inline";
 }
-if(varurl.includes("witcher"))
+if(varurl.includes("product_id=10"))
 {
     main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/c0i88t0Kacs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     //main_sliderbox_image_img.src = "../images/witcher.jpg";
@@ -116,7 +129,7 @@ if(varurl.includes("witcher"))
     main_descriptions.appendChild(tag);
     main_spec_witcher.style.display = "inline";
 }
-
+*/
 //slider
 const container_slider = document.querySelector("#main_offers_container_slider");
 const container_slider_boxes = document.querySelectorAll(".main_offers_container_box");
@@ -126,7 +139,7 @@ const nextBtn = document.querySelector("#nextBtn");
 
 let counter = 1;
 
-container_slider.style.transform = "translateX(-228px)";
+container_slider.style.transform = "translateX(-275px)";
 
 nextBtn.addEventListener("click", function()
 {
@@ -137,7 +150,7 @@ nextBtn.addEventListener("click", function()
     container_slider.style.transition = "transform 0.4s ease-in-out";
     counter++;
     console.log(counter);
-    container_slider.style.transform = "translateX("+(-218*counter) + "px)";
+    container_slider.style.transform = "translateX("+(-279*counter) + "px)";
 });
 
 prevBtn.addEventListener("click", function()
@@ -148,7 +161,7 @@ prevBtn.addEventListener("click", function()
     }
     container_slider.style.transition = "transform 0.4s ease-in-out";
     counter--;
-    container_slider.style.transform = "translateX("+(-218*counter) + "px)";
+    container_slider.style.transform = "translateX("+(-279*counter) + "px)";
 });
 
 container_slider.addEventListener("transitionend",  function()
@@ -157,12 +170,31 @@ container_slider.addEventListener("transitionend",  function()
     {
         container_slider.style.transition = "none";
         counter = container_slider_boxes.length - 5; 
-        container_slider.style.transform = "translateX("+(-218*counter) + "px)";
+        container_slider.style.transform = "translateX("+(-279*counter) + "px)";
     }
     if(container_slider_boxes[counter].id === 'firstClone')
     {
         container_slider.style.transition = "none";
         counter = container_slider_boxes.length - counter-3; 
-        container_slider.style.transform = "translateX("+(-218*counter) + "px)";
+        container_slider.style.transform = "translateX("+(-279*counter) + "px)";
     }
 });
+
+console.log(container_slider_boxes.length);
+
+    container_slider_boxes[1].addEventListener("mouseenter", function()
+    {
+        container_slider_boxes[1].style.borderBottom = "5px solid #667DB9";
+    });
+
+for(i=0;i<container_slider_boxes.length;i++)
+{
+    container_slider_boxes[i].addEventListener("mouseenter", function()
+    {
+        container_slider_boxes[i].style.borderBottom = "5px solid #667DB9";
+    });
+    container_slider_boxes[i].addEventListener("mouseover", function()
+    {
+        container_slider_boxes[i].style.borderBottom = "5px solid red";
+    });
+}
