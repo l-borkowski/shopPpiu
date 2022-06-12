@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style_user_panel.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/navigation.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Sklep</title>
+</head>
+
+
+
+<body>
+    
+	
+	
+	<header>
+        <div id="header_logo">
+            <img src ="images/game-boy_white.png" width="160px" height="60px"/>
+        </div>
+        <div id="header_searchbar">
+            <input type="text" placeholder=" Search" id="header_searchbar_input"/>
+        </div>
+        <div id="header_login">
+            <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img src="images/cart_icon.png" width="20px" height="20px" style="vertical-align:middle"/></a></p>
+        </div>
+    </header>
+	
+	
+	
+	
+    <div style="clear: both;"></div>
+	
+	
+    <nav>
+        <div id="nav_bar">
+            <ul>
+                <li><a href="#"><img src="images/glowna.png" width="20px" height="20px" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;home</a></li>
+                <li><a href="#"><img src="images/kategorie.png" width="20px" height="20px" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
+                <li><a href="#"><img src="images/promocje.png" width="20px" height="20px" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;promocje</a></li>
+                <li><a href="#"><img src="images/nowosci.png" width="20px" height="20px" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;nowości</a></li>
+                <li><a href="#"><img src="images/onas.png" width="20px" height="20px" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;o nas</a></li>
+            </ul>
+        </div>
+    </nav>
+	
+	
+	
+	
+	
+    <main>
+        <div id="main_sliderbox">
+			<div id="naglowekStrony">
+				Moje konto
+			</div>
+			<div id="main_sliderbox_slider_slider">
+				<button class="zmianaStronBtn">Szczegóły konta</button>
+				<br>
+				<button class="zmianaStronBtn">Moje zamówienia</button>
+				<br>
+				<button class="zmianaStronBtn">Ustawienia konta</button>
+			</div>
+			<div id="main_sliderbox_slider">
+				<div id="naglowek">
+					Szczegóły Konta
+					
+				</div>
+
+
+				<div>
+					<div id="tytuly">
+						Dane osobowe
+					</div>
+					
+					<div id="opis">
+						<i>Uzupełnij swój profil i zwiększ bezpieczeństwo dodając datę urodzenia oraz numer telefonu.</i>
+
+					</div>
+					
+					<div id="DaneOsobowe" class="inputsDiv">
+						Imie i nazwisko
+						<br>
+						<input type="text" class="textBox" id="name">
+						<br>
+					
+						Data urodzenia
+						<br>
+						<input type="text" placeholder="yyyy-mm-dd" class="textBox" id="birthday">
+						<br>
+					
+						Numer telefonu
+						<br>
+						<input type="text" class="textBox">
+						<br>
+
+						Hasło
+						<br>
+						<input type="text" class="textBox" id="verification">
+						<br>
+
+						<a href="#">
+							<div>
+								<button class="zmienButton" id="zmienJ">Zmień</button>
+							</div>
+						</a>
+					</div>
+					
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+					<div id="tytuly">
+						Adres email
+					</div>
+					
+					<div id="opis">
+						<i>Zmień adres email dla swojego konta.</i>
+
+					</div>
+
+					<div id="Adresy" class="inputsDiv">
+						Stary adres email
+						<br>
+						<input type="text" class="textBox" id="verification">
+						<br>
+
+						Nowy adres email
+						<br>
+						<input type="text" class="textBox" id="password">
+						<br>
+
+						Hasło
+						<br>
+						<input type="password" class="textBox" id="password">
+						<button type="button" id="btnToggle" class="toggle">
+                   
+							<i id="togglePassword" class="fa fa-eye fa-lg" ></i>
+							
+							
+						 </button><br>
+						
+						 
+						<button class="zmienButton" id="zmienD">Zmień</button>
+					</div>
+
+
+				</div>
+
+			</div>
+            
+			   
+            
+			
+			
+        </div>
+        
+    </main>
+	
+    <script>
+		const togglePassword = document.querySelector('#togglePassword');
+		const password = document.querySelector('#password');
+
+		togglePassword.addEventListener('click', function (e) {
+			// toggle the type attribute
+			const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+			password.setAttribute('type', type);
+			// toggle the eye slash icon
+			this.classList.toggle('fa-eye-slash');
+		});
+
+		
+				document.getElementById("zmienJ").addEventListener("click", function()
+				{
+					const name = document.querySelector('#name');
+					const birthday = document.querySelector('#birthday');
+					const verification = document.querySelector('#verification');
+
+                $.post('http://146.59.44.209/api/user/update.php', {
+                    name: $("#name").val(), birthday: $("#birthday").val(), verification: $("#verification").val()
+                }).done(function() {
+                    alert('Zmiana udana!');
+                }).fail(function(response) {
+                    const data = response.responseJSON;
+                    alert('Błąd podczas zmiany: ' + data.message);
+                });
+            });
+
+			document.getElementById("zmienD").addEventListener("click", function()
+				{
+					const password = document.querySelector('#password');
+					const email = document.querySelector('#email');
+					const verification = document.querySelector('#verification');
+
+                $.post('http://146.59.44.209/api/user/update.php', {
+                    email: $("#email").val(), password: $("#password").val(), verification: $("#verification").val()
+                }).done(function() {
+                    alert('Zmiana udana!');
+                }).fail(function(response) {
+                    const data = response.responseJSON;
+                    alert('Błąd podczas zmiany: ' + data.message);
+                });
+
+			
+
+            });
+
+			
+        
+	</script>
+	
+	
+	
+	
+	
+	
+</body>
+</html>
