@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/style_mainpage.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/navigation.css"/>
     <!-- Import czcionki-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -108,7 +109,7 @@
                 <h1>Popularne produkty</h1>
                 <p>Zyskujące na popularności nowe gry i oprogramowanie.</p>
                 <div id="main_offers_arrows">
-                <button id="prevBtn" style="float: left;">
+                <button id="prevBtn" style="float: left; position: relative; z-index: 0;">
                     <img src="../images/to_left.png" width="35%" height=auto  style="vertical-align:middle"/>
                 </button>
                 <div id="main_offers_container">
@@ -192,12 +193,50 @@
                         </div>
                     </div>    
                     </div>             
-                <button id="nextBtn" style="float: left;">
+                <button id="nextBtn" style="float: left; z-index: 0;">
                     <img src="../images/to_right.png" width="35%" height=auto style="vertical-align:middle"/>
                 </button>
                 </div>
                 <div style="clear: both;"></div>
-                
+            </div>
+            <div id="main_offers_container2">
+                <h1>Kategorie</h1>
+                <p>Szeroki wybór kategorii.</p>
+                <div class="main_offers_container_box2">
+                    <img src="../images/zrecznosciowe.png" width="100%" height="400px"/>
+                </div>
+                <div class="main_offers_container_box2">
+                    <img src="../images/fabularne.png" width="100%" height="400px"/>
+                </div>
+                <div class="main_offers_container_box2">
+                    <img src="../images/zrecznosciowe.png" width="100%" height="400px"/>
+                </div>
+                <div class="main_offers_container_box2">
+                    <img src="../images/fabularne.png" width="100%" height="400px"/>
+                </div>
+            </div>
+            <div id="coWyroznia">
+                <div id="main_about_header">
+                <h1>Co nas wyróżnia</h1>
+            </div>
+            <div id="main_about_container">
+                <div class="main_about_container_box">
+                    <img src="../images/transaction.png" width="150px" height="150px"/>
+                    <p>Bezpieczenstwo transakcji</p>
+                </div>
+                <div class="main_about_container_box">
+                    <img src="../images/support.png" width="150px" height="150px"/>
+                    <p>Aktywny Support</p>
+                </div>
+                <div class="main_about_container_box">
+                    <img src="../images/price.png" width="150px" height="150px"/>
+                    <p>Najniższe ceny</p>
+                </div>
+                <div class="main_about_container_box">
+                    <img src="../images/mail.png" width="150px" height="150px"/>
+                    <p>Natychmiastowa wysyłka</p>
+                </div>
+                </div>
             </div>
         </div>
     <script src="../scripts/script.js"></script>

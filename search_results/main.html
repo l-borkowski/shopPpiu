@@ -6,104 +6,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="../style.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/navigation.css" />
   <title>Sklep</title>
 </head>
 
 <body>
-  <header>
-    <a href="../shop_mainpage_backend.html">
-      <div id="header_logo">
-        <img src="../images/game-boy_white.png" width="160px" height="60px" />
+  <div class="container">
+    <div class="header">
+      <div class="search__container">
+        <input type="text" class="search__input" placeholder=" Search" />
       </div>
-    </a>
+      <div id="header_login">
+        <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img src="../images/cart_icon.png"
+              width="33px" height="33px" style="vertical-align:middle" /></a></p>
+      </div>
+    </div>
+    <div class="navigator">
 
-    <div id="header_searchbar">
-      <input type="text" placeholder=" Search" id="header_searchbar_input" />
-    </div>
-    <div id="header_login">
-      <p>
-        <a href="../login.html" id="login">Zaloguj się</a> |
-        <a href="../register.html">Zarejestruj</a> |
-        <a href="#"><img src="../images/cart_icon.png" width="20px" height="20px" style="vertical-align: middle" /></a>
-      </p>
-    </div>
-  </header>
-  <div style="clear: both"></div>
-  <nav>
-    <div id="nav_bar">
-      <ul>
-        <li>
-          <a href="#"><img src="../images/glowna.png" width="20px" height="20px"
-              style="vertical-align: middle" />&nbsp;&nbsp;&nbsp;home</a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/kategorie.png" width="20px" height="20px"
-              style="vertical-align: middle" />&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/promocje.png" width="20px" height="20px"
-              style="vertical-align: middle" />&nbsp;&nbsp;&nbsp;promocje</a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/nowosci.png" width="20px" height="20px"
-              style="vertical-align: middle" />&nbsp;&nbsp;&nbsp;nowości</a>
-        </li>
-        <li>
-          <a href="#"><img src="../images/onas.png" width="20px" height="20px"
-              style="vertical-align: middle" />&nbsp;&nbsp;&nbsp;o nas</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div id="header_row">
-      <h1 class="title">Lista ofert</h1>
-      <div class="selectWrapper">
-        <select class="selectBox" name="cars" id="cars">
-          <option value="lowest">Najniższa cena</option>
-          <option value="highest">Najwyższa cena</option>
-        </select>
+      <!--LOGO-->
+      <div id="header_logo">
+        <img src="../images/game-boy_white.png" width="70%" class="center" />
       </div>
+
+      <!--NAV BAR-->
+      <div id="nav_bar">
+        <ul>
+          <li style="font-weight: 400"><a class="four" href="#"><img src="../images/glowna.png" width="12%"
+                height="auto" style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;home</a></li>
+          <li><a class="four" href="#"><img src="../images/search.png" width="12%" height="auto"
+                style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;przeglądaj&nbsp;</a></li>
+          <li><a class="four" href="#"><img src="../images/kategorie.png" width="12%" height="auto"
+                style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
+          <li><a class="prom" href="#"><img src="../images/nowosci.png" width="12%" height="auto"
+                style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;promocje</a></li>
+          <li><a class="four" href="#"><img src="../images/promocje.png" width="12%" height="auto"
+                style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;nowości</a></li>
+          <li><a class="four" href="#"><img src="../images/onas.png" width="12%" height="auto"
+                style="vertical-align:middle" />&nbsp;&nbsp;&nbsp;o nas</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div id="content_body">
-      <div id="search_results">
-        <div id="item">
-          <div id="image_wrapper">
-            <img src="../images/elden_ring_cover.png" id="item_photo" />
+    <div class="main">
+      <div id="header_row">
+        <h1 class="title">Lista ofert</h1>
+        <div class="selectWrapper">
+          <select class="selectBox" name="cars" id="cars">
+            <option value="lowest">Najniższa cena</option>
+            <option value="highest">Najwyższa cena</option>
+          </select>
+        </div>
+      </div>
+      <div id="content_body">
+        <div id="search_results">
+          <div id="item">
+            <div id="image_wrapper">
+              <img src="../images/elden_ring_cover.png" id="item_photo" />
+            </div>
+            <div id="text_wrapper">
+              <p class="title_p" id="name">Elder Ring</p>
+              <p class="title_p" id="date">Data premiery: 2021</p>
+              <p class="title_p" id="price">194 PLN</p>
+            </div>
+            <div id="button_wrapper">
+              <input type="button" id="product_btn" value="Przejdź" />
+            </div>
           </div>
-          <div id="text_wrapper">
-            <p class="title_p" id="name">Elder Ring</p>
-            <p class="title_p" id="date">Data premiery: 2021</p>
-            <p class="title_p" id="price">194 PLN</p>
-          </div>
-          <div id="button_wrapper">
-            <input type="button" id="product_btn" value="Przejdź" />
+        </div>
+        <div id="filters_section">
+          <p id="filters_title">Filtry</p>
+          <p class="filter_title">CENA</p>
+          <div id="priceRange">
+            <input class="priceInput" type="number" placeholder="od" id="priceFrom"> -
+            <input class="priceInput" type="number" placeholder="do" id="priceTo">
           </div>
         </div>
       </div>
-      <div id="filters_section">
-        <p id="filters_title">Filtry</p>
-        <p class="filter_title">CENA</p>
-        <div id="priceRange">
-          <input class="priceInput" type="number" placeholder="od" id="priceFrom"> -
-          <input class="priceInput" type="number" placeholder="do" id="priceTo">
-        </div>
-      </div>
+      <div id="page_selector"></div>
+      </main>
+      <div style="clear: both"></div>
+      <script src="script.js"></script>
     </div>
-    <div id="page_selector"></div>
-  </main>
-  <div style="clear: both"></div>
-  <div id="footer">
-    <p>
-      Właściciel serwisu: TERG S.A. Ul. Za Dworcem 1D, 77-400 Złotów; Spółka
-      wpisana do Krajowego Rejestru Sądowego w Sądzie Rejonowym w Poznań-Nowe
-      Miasto i Wilda w Poznaniu, IX Wydział Gospodarczy Krajowego Rejestru
-      Sądowego pod nr KRS 0000427063, Kapitał zakładowy: 39 512 500 zł; NIP
-      767-10-04-218, REGON 570217011; Sprzedaż dla firm (B2B):
-      dlabiznesu@me.pl INFOLINIA: 756 756 756
-    </p>
-  </div>
-  <script src="script.js"></script>
 </body>
 
 </html>
