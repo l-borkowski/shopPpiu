@@ -195,7 +195,7 @@ a.prom{
     margin:20px 60px;
     padding: 10px;
     background-color: #323435;
-    height: 800px;
+    height: 750px;
 }
 #main_sliderbox_image
 {
@@ -315,9 +315,9 @@ a.prom{
 {
     height: 150px;
     margin: 10px 20px;
-    border-radius: 30px;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 #main_offers_container_slider
 {
@@ -330,27 +330,32 @@ a.prom{
 #main_offers_container
 {
     position: absolute;
-    width: 42%;
-    height: 350px;
-    top:60%;
+    width: 65%;
+    height: 300px;
+    top:650px;
     color: white;
     float: left;
     overflow: hidden;
     margin: 0px 60px;
 }
+
 #nextBtn
 {
-    position: absolute;
-    right: 29%;
-    top: 65%;
+ /*   position: absolute;
+    right: 100px;
+    top:700px;*/
+    float: right;
+    margin-top: 100px;
     background: none;
     border: none;
 }
 #prevBtn
 {
-    position: absolute;
-    left: 23%;
-    top: 65%;
+    /*position: absolute;
+    left: 450px;
+    top:700px;*/
+    float: left;
+    margin-top: 100px;
     background: none;
     border: none;
 }
