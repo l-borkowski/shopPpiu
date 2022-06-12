@@ -45,8 +45,8 @@
         return;
     }
 
-    if (isset($password) && (strlen($password) < 8 || strlen($password) > 128)) {
-        error('Hasło musi posiadać od 8 do 128 znaków!');
+    if (isset($password) && (strlen($password) < 8 || strlen($password) > 256)) {
+        error('Hasło musi posiadać od 8 do 256 znaków!');
         return;
     }
 
@@ -89,7 +89,7 @@
         mysqli_stmt_fetch($statement);
         mysqli_stmt_close($statement);
 
-        if (isset($fetched_user_id)) {
+        if ($fetched_user_id) {
             mysqli_close($connection);
 
             error('Podany adres email jest już zajęty!');

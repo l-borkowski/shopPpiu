@@ -1,74 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
-body {
-    margin: 0;
-    background-color: #1F2326;
-    font-family: 'Inter', sans-serif;
-    color: white;
-}
 
-header {
-    padding: 20px 40px 0px 40px;
-    height: 80px;
-    width: 95.80%;
-}
 
-#header_logo {
-    width: 20%;
-    float: left;
-}
 
-#header_searchbar {
-    float: left;
-    width: 50%;
-    padding: 15px 40px 0px 40px;
-}
-
-#header_searchbar_input {
-    border-radius: 20px;
-    width: 60%;
-    height: 30px;
-
-}
-
-#header_login {
-    width: 20%;
-    color: white;
-    float: left;
-    text-align: right;
-    margin: auto 0px;
-    font-size: 17px;
-}
-
-#header_login>p>a {
-    height: 30px;
-    margin: auto 0px;
-    text-decoration: none;
-    color: white;
-}
-
-#nav_bar {
-    width: 20%;
-    text-transform: uppercase;
-    float: left;
-}
-
-#nav_bar>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-}
-
-#nav_bar>ul>li {
-    padding: 20px;
-    font-size: 18px;
-}
-
-#nav_bar>ul>li>a {
-    text-decoration: none;
-    color: white;
-}
 
 #main_sliderbox {
     width: 79%;
