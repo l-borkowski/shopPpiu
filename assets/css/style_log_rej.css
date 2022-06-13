@@ -28,7 +28,7 @@ html {
 #main_sliderbox_slider {
 	margin-left: 25%;
 	margin-top: 8%;
-	width: 60%;
+	width: auto;
 	height: 520px;
 	background-color: #1F2326;
 }
@@ -213,4 +213,15 @@ html {
 #captcha {
 	margin-left: 160px;
 	margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1475px) { 
+
+	#main_sliderbox_slider
+	{
+		margin-left: 15%;
+		width: auto;
+		
+	}
 }

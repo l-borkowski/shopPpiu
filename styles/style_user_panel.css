@@ -17,17 +17,7 @@ header
     height: 80px;
     width: 95.80%;
 }
-#header_logo
-{
-    width: 20%;
-    float: left;
-}
-#header_searchbar
-{
-    float: left;
-    width: 50%;
-    padding: 15px 40px 0px 40px;
-}
+
 #header_searchbar_input
 {
     border: 1px solid #1F2326;
@@ -52,31 +42,6 @@ header
     text-decoration: none;
     color: white;
 }
-#nav_bar
-{
-    width: 20%;
-    height: 1080px;
-    background-color: #1F2326;
-    text-transform: uppercase;
-    border-right: 1px solid white;
-    float: left;
-}
-#nav_bar > ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-}
-#nav_bar > ul > li
-{
-    padding: 20px;
-    font-size: 18px;
-}
-#nav_bar > ul > li > a
-{
-    text-decoration: none;
-    color: white;
-}
 
 
 #topic_label
@@ -90,7 +55,7 @@ header
 #main_sliderbox
 {
 	
-    width: 79.94%;
+    width: 90.94%;
     height: 1080px;
     background-color: #1F2326;
     float: left;
@@ -99,9 +64,9 @@ header
 #main_sliderbox_slider
 {
     float: left;
-	margin-left: 0%;
+	
 	margin-top: 1%;
-    width: 55%;
+    width: 60%;
     height: 760px;
     background-color: #2D3339;
     border-radius: 30px;
@@ -111,68 +76,16 @@ header
 #main_sliderbox_slider_slider
 {
 	float: left;
-	margin-left: 5%;
+	margin-left: 0%;
 	margin-top: 1%;
-    width: 25%;
+    width: 40%;
     height: 650px;
     background-color: #1F2326;
     border-radius: 30px;
-    margin-right: 100px;
+   
 }
 
-#login_with_google
-{
-	position: absolute;
-	margin-left: 139px;
-	
-	border-radius: 15px;
-    width: 150px;
-    height: 26px;
-    background-color: white;
-	font-size:13px;
-	color: black;
-    
-}
-#login_with_google_text
-{
-	position: absolute;
-	
-	margin-top: 4px;
-	margin-left: 30px;
-	
-	
-	
-    
-}
-#login_with_facebook_text
-{
-	
-	position: absolute;
-	
-	margin-top: 4px;
-	margin-left: 28px;
-	
-	
-	
-	
-	
-    
-}
-#login_with_facebook
-{
-	position: absolute;
-	margin-left: 320px;
-	padding-right: 2px;
-	
-	
-	border-radius: 15px;
-    width: 150px;
-    height: 26px;
-    background-color: white;
-	font-size:13px;
-	color: black;
-    
-}
+
 .favicon
 {
 	margin-left: 2px;
@@ -311,7 +224,7 @@ header
 {
     font-size: 50px;
     margin-top: 50px;
-    margin-left: 140px;
+    margin-left: 70px;
 }
 
 .zmianaStronBtn
@@ -341,4 +254,46 @@ header
     font-size: 20px;
     border: none;
     background-color: #2D3339;
+}
+
+
+@media screen and (max-width: 1475px) {
+    .container {
+        grid-template-columns: 0 !important;
+}
+}
+
+@media screen and (max-width: 1075px) {
+    #main_sliderbox_slider_slider
+    {
+       display: none;  
+    }
+    
+}
+
+@media screen and (max-width: 1075px) {
+    #main_sliderbox_slider{
+
+        margin-left: 10%;
+        width: 90% !important;
+        
+      }
+
+}
+
+@media screen and (max-width: 705px) {
+    #opis
+    {
+        display: none;
+    }
+    #DaneOsobowe
+    {
+        margin-left: 30%;
+    }
+
+    #Adresy
+    {
+        margin-left: 30%;
+    }
+
 }
