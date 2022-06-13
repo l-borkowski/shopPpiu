@@ -9,12 +9,12 @@
     }
 
     if (empty($_POST)) {
-        render();
+        render('login');
         return;
     }
 
     if (empty($_POST['email']) || empty($_POST['password'])) {
-        render('Nie podano danych do logowania!');
+        render('login', 'Nie podano danych do logowania!');
         return;
     }
 
@@ -36,12 +36,12 @@
     mysqli_close($connection);
 
     if (empty($fetched_user_id)) {
-        render('Podano błędne dane do logowania!');
+        render('login', 'Podano błędne dane do logowania!');
         return;
     }
 
     if (!password_verify($password, $fetched_password)) {
-        render('Podano błędne dane do logowania!');
+        render('login', 'Podano błędne dane do logowania!');
         return;
     }
 

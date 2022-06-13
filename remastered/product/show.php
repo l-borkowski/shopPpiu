@@ -2,6 +2,7 @@
 
     require_once '../credentials.php';
     require_once '../application.php';
+    require_once '../user.php';
 
     if (empty($_GET['product_id'])) {
         redirect('../index.php');
@@ -32,4 +33,6 @@
         return;
     }
 
-    render(['product' => $product]);
+    $product['pictures'] = explode(';', $product['pictures']);
+
+    render('show', ['product' => $product]);

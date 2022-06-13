@@ -24,12 +24,12 @@
     $status = paypal_fetch_paynament_status($token);
 
     if (empty($status)) {
-        redirect('../index.php');
+        render('failed');
         return;
     }
 
     if ($status != 'COMPLETED') {
-        redirect('../index.php');
+        render('failed');
         return;
     }
 
@@ -41,4 +41,4 @@
     mysqli_stmt_close($statement);
     mysqli_close($connection);
 
-    redirect('../index.php');
+    render('success');
