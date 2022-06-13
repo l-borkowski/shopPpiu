@@ -21,10 +21,7 @@ header {
 	width: 95.80%;
 }
 
-#header_logo {
-	width: 20%;
-	float: left;
-}
+
 
 #header_searchbar {
 	float: left;
@@ -51,29 +48,6 @@ header {
 #header_login > p > a {
 	height: 30px;
 	margin: auto 0px;
-	text-decoration: none;
-	color: white;
-}
-
-#nav_bar {
-	width: 20%;
-	background-color: #1F2326;
-	text-transform: uppercase;
-	float: left;
-}
-
-#nav_bar > ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 20px;
-}
-
-#nav_bar > ul > li {
-	padding: 20px;
-	font-size: 18px;
-}
-
-#nav_bar > ul > li > a {
 	text-decoration: none;
 	color: white;
 }
