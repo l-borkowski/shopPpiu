@@ -279,3 +279,13 @@ header {
 	margin-left: 160px;
 	margin-top: 40px;
 }
+
+@media screen and (max-width: 1475px) { 
+
+	#main_sliderbox_slider
+	{
+		margin-left: 15%;
+		width: auto;
+		
+	}
+}
