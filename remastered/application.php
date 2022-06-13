@@ -6,18 +6,22 @@
         header('Location: ' . $location);
     }
 
-    require_once '../Mustache/Autoloader.php';
+    require_once 'Mustache/Autoloader.php';
     Mustache_Autoloader::register();
 
     $vars = [];
 
-    function render($message = null) {
+    function render($page, $message = null) {
+        $page = 'assets/views/' . $page;
+        render_page($page, $message);
+    }
+
+    function render_page($page, $message = null) {
         $mustache = new Mustache_Engine([
             'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__))
         ]);
-        //$template = $mustache->loadTemplate('template/' . $page);
         global $vars;
-        $page =  'views/' . str_replace('.php', '', basename($_SERVER['SCRIPT_FILENAME']));
+        
         if (empty($message)) {
             echo $mustache->render($page, $vars);
             return;
@@ -28,7 +32,8 @@
             return;
         }
         if (is_array($message)) {
-            echo $mustache->render($page, $message);
+            $vars = array_merge($vars, $message);
+            echo $mustache->render($page, $vars);
             return;
         }
     }

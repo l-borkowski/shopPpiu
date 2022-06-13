@@ -2,7 +2,7 @@
 
     require_once '../credentials.php';
     require_once '../application.php';
-    require_once '../user/show.php';
+    require_once '../user.php';
 
     if (empty($_GET['product_id'])) {
         redirect('../index.php');
