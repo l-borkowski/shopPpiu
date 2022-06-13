@@ -133,15 +133,15 @@ witcher_button = document.querySelector("#button_witcher");
 
 
 
-$.get('/api/user/show.php').done(function(response) {
+/* $.get('/api/user/show.php').done(function(response) {
     $('#header_login').text('Witaj ' + response.user.name + '!');
 })
-
+ */
 /// Search sumbit
 
-var input = document.getElementById("header_searchbar_input");
+var input = document.getElementById("search_input");
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
       event.preventDefault();
       onSearch();
@@ -149,6 +149,6 @@ input.addEventListener("keypress", function(event) {
   });
 
 async function onSearch() {
-    let value = document.getElementById("header_searchbar_input").value;
+    let value = input.value;
     window.location.href = "search_results/main.html?search=" + value;
 }
