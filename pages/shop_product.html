@@ -32,7 +32,7 @@
             <!--NAV BAR-->
             <div id="nav_bar">
                 <ul>
-                    <li style="font-weight: 400"><a class="four" href="#"><img src="../images/glowna.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;home</a></li>
+                    <li style="font-weight: 400"><a class="four" href="shop_mainpage.html"><img src="../images/glowna.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;home</a></li>
                     <li><a class="four" href="#"><img src="../images/search.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;przeglądaj&nbsp;</a></li>
                     <li><a class="four" href="#"><img src="../images/kategorie.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;kategorie&nbsp;</a></li>
                     <li><a class="prom" href="#"><img src="../images/nowosci.png" width="12%" height="auto" style="vertical-align:middle"/>&nbsp;&nbsp;&nbsp;promocje</a></li>
@@ -64,39 +64,19 @@
             </button>
             <div id="main_offers_container">
                 <div id="main_offers_container_slider">
-                        <a href="shop_product.html?watchdogs" class="watchdogs_link">
-                            <img src="../images/elden_product_slider/e6.png" id="lastClone" class="main_offers_container_box" width="240px" height="170px"/>
-                        </a>
-                        <a href="shop_product.html?meatboy"  class="meatboy_link">
-                            <img src="../images/elden_product_slider/e1.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?cuphead"  class="cuphead_link">
-                            <img src="../images/elden_product_slider/e2.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?rayman"  class="rayman_link">
-                            <img src="../images/elden_product_slider/e3.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?fallguys"  class="fallguys_link">
-                            <img src="../images/elden_product_slider/e4.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?gearsofwar"  class="gearsofwar_link">
-                            <img src="../images/elden_product_slider/e5.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?watchdogs"  class="watchdogs_link">
-                            <img src="../images/elden_product_slider/e6.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?meatboy"  class="meatboy_link">
-                            <img src="../images/elden_product_slider/e1.png" id="firstClone" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?cuphead"  class="cuphead_link">
-                            <img src="../images/elden_product_slider/e2.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html?rayman" class="rayman_link">
-                            <img src="../images/elden_product_slider/e3.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
-                        <a href="shop_product.html" class="fallguys_link">
-                            <img src="../images/elden_product_slider/e4.png" class="main_offers_container_box" width="240px"  height="170px"/>
-                        </a>
+
+                            <img src="{{product.pictures[5]}}" id="lastClone" class="main_offers_container_box" width="240px" height="170px"/>
+                            <img src="{{product.pictures[0]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[1]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[2]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[3]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[4]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[5]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[1]}}" id="firstClone" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[2]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[3]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+                            <img src="{{product.pictures[4]}}" class="main_offers_container_box" width="240px"  height="170px"/>
+
                 </div> 
             </div>  
             <button id="nextBtn">
