@@ -6,7 +6,7 @@
     <body>
         <header>
             {{#user}}
-            <p>Moje konto | <a href="/user/logout.php">Wyloguj</a></p>
+            <p>{{user.name}} | {{user.email}} | Moje konto | <a href="/user/logout.php">Wyloguj</a></p>
             {{/user}}
             {{^user}}
             <p><a href="/user/login.php">Zaloguj</a> | <a href="/user/register.php">Zarejestruj</a></p>
