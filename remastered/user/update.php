@@ -10,6 +10,7 @@
 
     $user_id = $_SESSION['user_id'];
 
+    $fetched_user_id;
     $fetched_name;
     $fetched_email;
     $fetched_phone;
@@ -63,8 +64,8 @@
         return;
     }
 
-    if (strlen($password) < 8 || strlen($password) > 128) {
-        render('update', 'Hasło musi posiadać od 8 do 128 znaków!');
+    if (strlen($phone) < 9 || strlen($phone) > 16) {
+        render('update', 'Numer telefonu musi posiadać od 9 do 16 znaków!');
         return;
     }
 
@@ -73,7 +74,49 @@
         return;
     }
 
+    if (isset($phone) && (!ctype_digit($phone))) {
+        render('update', 'Numer telefonu może zawierać tylko cyfry!');
+        return;
+    }
+
+    if (isset($birthday) && (!validate_date($birthday))) {
+        render('update', 'Podana data urodzenia jest nieprawidłowa!');
+        return;
+    }
+
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         render('update', 'Podany adres email jest nieprawidłowy!');
         return;
     }
+
+    $statement = mysqli_prepare($connection, 'SELECT user_id FROM users WHERE user_id != ? AND email = ?');
+
+    mysqli_stmt_bind_param($statement, 'is', $user_id, $email);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_store_result($statement);
+    mysqli_stmt_bind_result($statement, $fetched_user_id);
+    mysqli_stmt_fetch($statement);
+    mysqli_stmt_close($statement);
+
+    if (isset($fetched_user_id)) {
+        mysqli_close($connection);
+
+        render('update', 'Podany adres email jest już zajęty!');
+        return;
+    }
+
+    if (!password_verify($verification, $fetched_password)) {
+        mysqli_close($connection);
+
+        render('update', 'Podane akutalne hasło jest niepoprawne!');
+        return;
+    }
+
+    $statement = mysqli_prepare($connection, 'UPDATE users SET name = ?, email = ?, phone = ?, birthday = ? WHERE user_id = ?');
+
+    mysqli_stmt_bind_param($statement, 'sssssi', $name, $email, $phone, $birthday, $user_id);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_close($statement);
+    mysqli_close($connection);
+
+    render('update', 'Dane uzytkownika zostały zaktualizowane!');
