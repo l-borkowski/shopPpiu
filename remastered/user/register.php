@@ -9,12 +9,12 @@
     }
 
     if (empty($_POST)) {
-        render();
+        render('register');
         return;
     }
 
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['password'])) {
-        render('Nie podano danych do rejestracji!');
+        render('register', 'Nie podano danych do rejestracji!');
         return;
     }
 
@@ -23,27 +23,27 @@
     $password = $_POST['password'];
 
     if (strlen($name) < 3 || strlen($name) > 64) {
-        render('Nazwa użytkownika musi posiadać od 3 do 64 znaków!');
+        render('register', 'Nazwa użytkownika musi posiadać od 3 do 64 znaków!');
         return;
     }
 
     if (strlen($email) < 6 || strlen($email) > 64) {
-        render('Adres email musi posiadać od 6 do 64 znaków!');
+        render('register', 'Adres email musi posiadać od 6 do 64 znaków!');
         return;
     }
 
     if (strlen($password) < 8 || strlen($password) > 128) {
-        render('Hasło musi posiadać od 8 do 128 znaków!');
+        render('register', 'Hasło musi posiadać od 8 do 128 znaków!');
         return;
     }
 
     if (!ctype_alnum($name)) {
-        render('Nazwa użytkonika może zawierać tylko litery i cyfry!');
+        render('register', 'Nazwa użytkonika może zawierać tylko litery i cyfry!');
         return;
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        render('Podany adres email jest nieprawidłowy!');
+        render('register', 'Podany adres email jest nieprawidłowy!');
         return;
     }
 
@@ -63,7 +63,7 @@
     if (isset($fetched_user_id)) {
         mysqli_close($connection);
 
-        render('Podany adres email jest już zajęty!');
+        render('register', 'Podany adres email jest już zajęty!');
         return;
     }
 
