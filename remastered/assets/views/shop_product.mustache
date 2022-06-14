@@ -19,14 +19,14 @@
                 <input type="text" class="search__input" placeholder=" Search"/>
             </div>
             <div id="header_login">
-                <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img src="../images/cart_icon.png" width="33px" height="33px" style="vertical-align:middle"/></a></p>
+                <p><a href="login.mustache">Zaloguj się</a> | <a href="register.mustache">Zarejestruj</a> | <a href="#"><img src="../images/cart_icon.png" width="33px" height="33px" style="vertical-align:middle"/></a></p>
             </div>
         </div>
         <div class="navigator">
 
             <!--LOGO-->
             <div id="header_logo">
-                <img src ="../images/game-boy_white.png" width="70%" class="center"/>
+                <a href="shop_mainpage.mustache"><img src ="../images/game-boy_white.png" width="70%" class="center"/></a>
             </div>
 
             <!--NAV BAR-->
@@ -55,7 +55,7 @@
                 Forma: CD-Key</p>
                 <p>Cena:</p>
                 <h1>{{product.price}}</h1>
-                <button id="button_buy">Kup Teraz</button>
+                <a href="show.mustache"><button id="button_buy">Kup Teraz</button></a>
                 <button id="button_add">Dodaj do koszyka</button>
             </div>
             <!--Slider-->

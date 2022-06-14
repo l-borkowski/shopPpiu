@@ -16,6 +16,48 @@ const main_spec_dune = document.querySelector("#main_spec_dune");
 const main_spec_cyberpunk2077 = document.querySelector("#main_spec_cyberpunk2077");
 const main_spec_witcher = document.querySelector("#main_spec_witcher");
 var tag = document.createElement("p");
+
+if(varurl.includes("product_id=1"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/DqoQG_XYF-8?'  title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=2"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/eILvkKnMxWY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=3"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/NN-9SQXoi50' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=4"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/afqO1qGr2XM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=5"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/Wj3dUvGLjNQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=6"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/XrfVfRV0zSg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=7"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/E3Huy2cdih0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=8"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/9lFx4wfc8Tc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=9"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/8X2kIfS6fb8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+if(varurl.includes("product_id=10"))
+{
+    main_sliderbox_image.innerHTML = "<iframe width='100%' height='500' src='https://www.youtube.com/embed/c0i88t0Kacs' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+}
+
 /*
 async function fetchAsync(name) {
     let url = 'http://146.59.44.209/api/product/show.php?'+name;
