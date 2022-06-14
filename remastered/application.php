@@ -12,7 +12,7 @@
     $vars = [];
 
     function render($page, $message = null) {
-        $page = 'assets/views/' . $page;
+        $page = 'views/' . $page;
         render_page($page, $message);
     }
 
