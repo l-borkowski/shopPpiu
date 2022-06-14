@@ -62,7 +62,7 @@ const witcher = document.querySelector("#main_sliderbox_slider_else_box4");
 elden.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(../images/edBK.jpg)";
+    bannerbox.style.backgroundImage = "url(../assets/images/edBK.jpg)";
     bannerboxh1.innerHTML = "Elden Ring (2022)";
     bannerboxp.innerHTML = "Elden Ring to gra RPG akcji autorstwa japońskiego studia FromSoftware.";
     elden.style.background = "#8d8d8d";
@@ -78,7 +78,7 @@ elden.addEventListener("click", function()
 duna.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(../images/duneBK.jpg)";
+    bannerbox.style.backgroundImage = "url(../assets/images/duneBK.jpg)";
     bannerboxh1.innerHTML = "Dune Spice Wars (2022)";
     bannerboxp.innerHTML = "Dune: Spice Wars jest strategią czasu rzeczywistego z elementami podgatunku 4X.";
     duna.style.background = "#8d8d8d";
@@ -94,7 +94,7 @@ duna.addEventListener("click", function()
 cyber.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(../images/cyberpunkBK.jpg)";
+    bannerbox.style.backgroundImage = "url(../assets/images/cyberpunkBK.jpg)";
     bannerboxh1.innerHTML = "Cyberpunk (2020)";
     bannerboxp.innerHTML = "Cyberpunk 2077 jest pierwszoosobową grą RPG z otwartym światem, wzbogaconą o elementy FPS-ów.";
     cyber.style.background = "#8d8d8d";
@@ -110,7 +110,7 @@ cyber.addEventListener("click", function()
 witcher.addEventListener("click", function()
 {
     console.log("Click");
-    bannerbox.style.backgroundImage = "url(../images/WitcherBK.jpg)";
+    bannerbox.style.backgroundImage = "url(../assets/images/WitcherBK.jpg)";
     bannerboxh1.innerHTML = "Witcher 3 (2015)";
     bannerboxp.innerHTML = "Witcher 3 to trzecia odsłona popularnej serii gier RPG opartej na prozie Andrzeja Sapkowskiego.";
     witcher.style.background = "#8d8d8d";
