@@ -21,9 +21,16 @@
                 <input type="text" class="search__input" placeholder=" Search" id="search_input" />
             </div>
             <div id="header_login">
-                <p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img
+                {{#user}}
+                <p>{{user.name}} | <a href="#">Moje konto</a> | <a href="/user/logout.php">Wyloguj</a> <a href="#"><img
                             src="../assets/images/cart_icon.png" width="33px" height="33px"
                             style="vertical-align:middle" /></a></p>
+                {{/user}}
+                {{^user}}
+                <p><a href="/user/login.php">Zaloguj się</a> | <a href="/user/register.php">Zarejestruj</a> | <a href="#"><img
+                            src="../assets/images/cart_icon.png" width="33px" height="33px"
+                            style="vertical-align:middle" /></a></p>
+                {{/user}}
             </div>
         </div>
         <div class="navigator">

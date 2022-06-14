@@ -1,7 +1,7 @@
 <?php
 
-    require_once '../credentials.php';
-    require_once '../application.php';
+    require_once 'credentials.php';
+    require_once 'application.php';
 
     if (empty($_SESSION['user_id'])) {
         return;
