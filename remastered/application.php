@@ -38,11 +38,30 @@
         }
     }
 
-    function resolve($key, $value = null) {
+    function resolve($key, $value) {
         global $vars;
+        if (isset($vars[$key])) {
+            $vars[$key] = $value;
+        } else {
+            $vars = array_merge($vars, [$key => $value]);
+        }
+    }
+
+    /*function resolve($key, $value = null) {
+        global $vars;
+        $k = array_keys($key)[0];
+        if (isset($vars[$k])) {
+            $vars[$k] = array_values($key)[0];
+            return;
+        }
         if (empty($value)) {
             $vars = array_merge($vars, $key);
         } else {
             $vars = array_merge($vars, [$key => $value]);
         }
+    }*/
+
+    function validate_date($date, $format = 'Y-m-d'){
+        $d = DateTime::createFromFormat($format, $date);
+        return $d && $d->format($format) === $date;
     }

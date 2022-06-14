@@ -21,4 +21,4 @@
     mysqli_stmt_close($statement);
     mysqli_close($connection);
 
-    resolve(['user' => $user]);
+    resolve('user', $user);

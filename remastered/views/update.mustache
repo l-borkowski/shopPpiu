@@ -19,9 +19,9 @@
 				<input type="text" class="search__input" placeholder=" Search" />
 			</div>
 			<div id="header_login">
-				<p><a href="#">Zaloguj się</a> | <a href="#">Zarejestruj</a> | <a href="#"><img
-							src="../assets/images/cart_icon.png" width="33px" height="33px"
-							style="vertical-align:middle" /></a></p>
+				<p>{{user.name}} | <a href="#">Moje konto</a> | <a href="/user/logout.php">Wyloguj</a> <a href="#"><img
+                            src="../assets/images/cart_icon.png" width="33px" height="33px"
+                            style="vertical-align:middle" /></a></p>
 			</div>
 		</div>
 		<div class="navigator">
@@ -81,58 +81,64 @@
 					</div>
 
 					<div id="DaneOsobowe" class="inputsDiv">
-						Imie i nazwisko
-						<br>
-						<input type="text" class="textBox" id="name">
-						<br>
+						<form method="post" action="update.php">
+							Imie i nazwisko
+							<br>
+							<input type="text" class="textBox" id="name" name="name" value="{{user.name}}">
+							<br>
 
-						Data urodzenia
-						<br>
-						<input type="text" placeholder="yyyy-mm-dd" class="textBox" id="birthday">
-						<br>
+							Adres email
+							<br>
+							<input type="text" class="textBox" id="email" name="email" value="{{user.email}}">
+							<br>
 
-						Numer telefonu
-						<br>
-						<input type="text" class="textBox">
-						<br>
+							Data urodzenia
+							<br>
+							<input type="text" placeholder="yyyy-mm-dd" class="textBox" id="birthday" name="birthday" value="{{user.birthday}}">
+							<br>
 
-						Hasło
-						<br>
-						<input type="text" class="textBox" id="verification">
-						<br>
+							Numer telefonu
+							<br>
+							<input type="text" class="textBox"  name="phone" value="{{user.phone}}">
+							<br>
 
-						<a href="#">
-							<div>
-								<button class="zmienButton" id="zmienJ">Zmień</button>
-							</div>
-						</a>
+							Aktualne hasło
+							<br>
+							<input type="password" class="textBox" id="verification"  name="verification">
+							<br>
+
+							{{#message}}
+							<p>{{message}}</p>
+							{{/message}}
+
+							<a href="#">
+								<div>
+									<button class="zmienButton" id="zmienJ" type="submit">Zmień</button>
+								</div>
+							</a>
+						</form>
 					</div>
 
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 					<div id="tytuly">
-						Adres email
+						Hasło
 					</div>
 
 					<div id="opis">
-						<i>Zmień adres email dla swojego konta.</i>
+						<i>Zmień hasło dla swojego konta.</i>
 
 					</div>
 
 					<div id="Adresy" class="inputsDiv">
-						Stary adres email
+						Stare hasło
 						<br>
-						<input type="text" class="textBox" id="verification">
-						<br>
-
-						Nowy adres email
-						<br>
-						<input type="text" class="textBox" id="password">
+						<input type="password" class="textBox" id="verification" name="verification">
 						<br>
 
-						Hasło
+						Aktualne hasło
 						<br>
-						<input type="password" class="textBox" id="password">
+						<input type="password" class="textBox" id="password" name="password">
 						<button type="button" id="btnToggle" class="toggle">
 
 							<i id="togglePassword" class="fa fa-eye fa-lg"></i>
@@ -162,48 +168,7 @@
 			this.classList.toggle('fa-eye-slash');
 		});
 
-
-		document.getElementById("zmienJ").addEventListener("click", function () {
-			const name = document.querySelector('#name');
-			const birthday = document.querySelector('#birthday');
-			const verification = document.querySelector('#verification');
-
-			$.post('http://146.59.44.209/api/user/update.php', {
-				name: $("#name").val(), birthday: $("#birthday").val(), verification: $("#verification").val()
-			}).done(function () {
-				alert('Zmiana udana!');
-			}).fail(function (response) {
-				const data = response.responseJSON;
-				alert('Błąd podczas zmiany: ' + data.message);
-			});
-		});
-
-		document.getElementById("zmienD").addEventListener("click", function () {
-			const password = document.querySelector('#password');
-			const email = document.querySelector('#email');
-			const verification = document.querySelector('#verification');
-
-			$.post('http://146.59.44.209/api/user/update.php', {
-				email: $("#email").val(), password: $("#password").val(), verification: $("#verification").val()
-			}).done(function () {
-				alert('Zmiana udana!');
-			}).fail(function (response) {
-				const data = response.responseJSON;
-				alert('Błąd podczas zmiany: ' + data.message);
-			});
-
-
-
-		});
-
-
-
 	</script>
-
-
-
-
-
 
 </body>
 

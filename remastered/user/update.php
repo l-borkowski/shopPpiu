@@ -2,44 +2,19 @@
 
     require_once '../credentials.php';
     require_once '../application.php';
+    require_once '../user.php';
 
     if (empty($_SESSION['user_id'])) {
         redirect('../user/login.php');
         return;
     }
 
-    $user_id = $_SESSION['user_id'];
-
-    $fetched_user_id;
-    $fetched_name;
-    $fetched_email;
-    $fetched_phone;
-    $fetched_birthday;
-    $fetched_password;
-
-    $connection = mysqli_connect(MYSQL_ADDRESS, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
-    $statement = mysqli_prepare($connection, 'SELECT name, email, phone, birthday, password FROM users WHERE user_id = ?');
-
-    mysqli_stmt_bind_param($statement, 's', $user_id);
-    mysqli_stmt_execute($statement);
-    mysqli_stmt_store_result($statement);
-    mysqli_stmt_bind_result($statement, $fetched_name, $fetched_email, $fetched_phone, $fetched_birthday, $fetched_password);
-    mysqli_stmt_fetch($statement);
-    mysqli_stmt_close($statement);
-
-    resolve([
-        'name' => $fetched_name,
-        'email' => $fetched_email,
-        'phone' => $fetched_phone,
-        'birthday' => $fetched_birthday
-    ]);
-
     if (empty($_POST)) {
         render('update');
         return;
     }
 
-    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['birthday'])) {
+    if (empty($_POST['name']) || empty($_POST['phone']) || empty($_POST['birthday'])) {
         render('update', 'Nie podano danych do aktualizacji!');
         return;
     }
@@ -49,10 +24,13 @@
         return;
     }
 
+    $user_id = $_SESSION['user_id'];
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $birthday = $_POST['birthday'];
+    $verification = $_POST['verification'];
 
     if (strlen($name) < 3 || strlen($name) > 64) {
         render('update', 'Nazwa użytkownika musi posiadać od 3 do 64 znaków!');
@@ -89,6 +67,10 @@
         return;
     }
 
+    $fetched_user_id;
+    $fetched_password;
+
+    $connection = mysqli_connect(MYSQL_ADDRESS, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
     $statement = mysqli_prepare($connection, 'SELECT user_id FROM users WHERE user_id != ? AND email = ?');
 
     mysqli_stmt_bind_param($statement, 'is', $user_id, $email);
@@ -105,6 +87,15 @@
         return;
     }
 
+    $statement = mysqli_prepare($connection, 'SELECT password FROM users WHERE user_id = ?');
+
+    mysqli_stmt_bind_param($statement, 'i', $user_id);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_store_result($statement);
+    mysqli_stmt_bind_result($statement, $fetched_password);
+    mysqli_stmt_fetch($statement);
+    mysqli_stmt_close($statement);
+
     if (!password_verify($verification, $fetched_password)) {
         mysqli_close($connection);
 
@@ -114,9 +105,16 @@
 
     $statement = mysqli_prepare($connection, 'UPDATE users SET name = ?, email = ?, phone = ?, birthday = ? WHERE user_id = ?');
 
-    mysqli_stmt_bind_param($statement, 'sssssi', $name, $email, $phone, $birthday, $user_id);
+    mysqli_stmt_bind_param($statement, 'ssssi', $name, $email, $phone, $birthday, $user_id);
     mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
     mysqli_close($connection);
 
-    render('update', 'Dane uzytkownika zostały zaktualizowane!');
+    resolve('user', [
+        'name' => $name,
+        'email' => $email,
+        'phone' => $phone,
+        'birthday' => $birthday
+    ]);
+
+    render('update', 'Dane użytkownika zostały zaktualizowane!');
